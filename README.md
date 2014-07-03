@@ -1,4 +1,4 @@
-B2DROP core components
+EUDAT B2DROP core components
 
 Branding:
 For the web-frontend a (right now very simple) branding is available.
