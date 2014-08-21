@@ -1,7 +1,7 @@
 #header .logo {
 	background-image: url(../img/logo.svg);
 	background-repeat: no-repeat;
-	width: 250px;
+	width: 751px;
 	height: 118px;
 	margin: 0 auto;
 }
@@ -19,5 +19,5 @@
         background-image: url(../img/logo-icon.svg);
         background-repeat: no-repeat;
         width: 62px;
-        height: 34px;
+        height: 46px;
 }
