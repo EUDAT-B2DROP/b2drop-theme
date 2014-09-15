@@ -1,23 +1,36 @@
+/* LOGO and APP NAME -------------------------------------------------------- */
+
+#owncloud {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	padding-bottom: 0;
+	height: 45px; /* header height */
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 #header .logo {
-	background-image: url(../img/logo.svg);
+	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
-	width: 250px;
-	height: 208px;
+	width: 261px;
+	height: 180px;
 	margin: 0 auto;
 }
 
 #header .logo-wide {
 	background-image: url(../img/logo-wide.svg);
 	background-repeat: no-repeat;
-	width: 147px;
-	height: 32px;
+	width: 150px;
+	height: 34px;
 }
 
 #header .logo-icon {
-        /* display logo so appname can be shown next to it */
-        display: inline-block;
-        background-image: url(../img/logo-icon.svg);
-        background-repeat: no-repeat;
-        width: 62px;
-        height: 46px;
+	/* display logo so appname can be shown next to it */
+	display: inline-block;
+	background-image: url(../img/logo-icon.svg);
+	background-repeat: no-repeat;
+	width: 62px;
+	height: 34px;
 }
