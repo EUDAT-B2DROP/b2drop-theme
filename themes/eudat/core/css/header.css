@@ -1,16 +1,3 @@
-/* LOGO and APP NAME -------------------------------------------------------- */
-
-#owncloud {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 5px;
-	padding-bottom: 0;
-	height: 45px; /* header height */
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 #header .logo {
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
@@ -20,7 +7,7 @@
 }
 
 #header .logo-wide {
-	background-image: url(../img/logo-wide.svg);
+	background-image: url(../img/logo-wide.png);
 	background-repeat: no-repeat;
 	width: 150px;
 	height: 34px;
@@ -29,7 +16,7 @@
 #header .logo-icon {
 	/* display logo so appname can be shown next to it */
 	display: inline-block;
-	background-image: url(../img/logo-icon.svg);
+	background-image: url(../img/logo-icon.png);
 	background-repeat: no-repeat;
 	width: 62px;
 	height: 34px;
