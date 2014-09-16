@@ -10,3 +10,27 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1C418F', endColorstr='#1C418F',GradientType=0 ); /* IE6-9 */
 }
 
+#body-login footer {
+    margin-top: 4px;
+    background: rgb(212, 221, 226) no-repeat right top;
+    height: 60px;
+    padding-top: 4px;
+}
+
+#body-login .footer_links {
+    margin: 16px 0 0 0;
+    margin-top: 1px;
+}
+
+#body-login .footer_links span {
+    font-size: 20px;
+}
+
+#body-login .footer_links a {
+    padding-right: 20px;
+    color: #224A7B;
+}
+
+#body-login .footer_links a:hover {
+    color: #224A7B;
+}

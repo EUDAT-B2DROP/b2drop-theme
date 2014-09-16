@@ -6,7 +6,14 @@ class OC_Theme {
     function __construct() {
         $this->themeName = "B2DROP";
         $this->slogan = "Sync and Exchange Research Data";
-        $this->themeFooter = "<b> New to EUDAT B2DROP? </b> <a href='https://b2drop.fz-juelich.de/pwm'> <br/><i>Create a test account!<i></a>";
+        $this->themeFooter = '
+            <div class="footer_links">
+                <span>
+	        <a href="https://b2drop.eudat.eu/pwm">Register</a>
+                <a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a>
+                <a href="https://b2drop.eudat.eu/FAQ.pdf">FAQ</a>
+                </span>
+            </div>';
         $this->baseUrl = "https://b2drop.eudat.eu";
     }
    
