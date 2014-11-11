@@ -12,6 +12,7 @@ class OC_Theme {
 	        <a href="https://b2drop.eudat.eu/pwm">Register</a>
                 <a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a>
                 <a href="https://b2drop.eudat.eu/FAQ.pdf">FAQ</a>
+                <a href="http://www.eudat.eu/support-request?Service=B2DROP">Contact</a>
                 </span>
             </div>';
         $this->baseUrl = "https://b2drop.eudat.eu";
