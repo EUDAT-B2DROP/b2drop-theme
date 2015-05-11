@@ -78,7 +78,7 @@
 								<div class="collapse navbar-collapse" id="gb_menu">
 									<ul id="menu" class="nav navbar-nav">
 										<li><a target="_blank" href="http://www.eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
-										<li><a href="/pwm/private/Login">REGISTER</a></li>
+										<li><a href="/pwm">REGISTER</a></li>
 										<li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
 										<li><a target="_blank" href="http://www.eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
 									</ul>
@@ -115,7 +115,7 @@
 
 				
 							<?php print_unescaped($_['content']); ?>
-							<p id="registe_link">Not registered yet? <a href="/pwm/private/Login">CLICK HERE</a></p>
+							<p id="registe_link">Not registered yet? <a href="/pwm">CLICK HERE</a></p>
 							<div class="push"></div><!-- for sticky footer -->
 
 							
