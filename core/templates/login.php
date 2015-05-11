@@ -1,5 +1,4 @@
 <?php /** @var $l OC_L10N */ ?>
-<h1>PROVA</h1>
 <!--[if IE 8]><style>input[type="checkbox"]{padding:0;}</style><![endif]-->
 <form method="post" name="login">
 	<fieldset>
