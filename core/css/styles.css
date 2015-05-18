@@ -152,8 +152,8 @@ li.deposit-title a {color: #000;}
 
 #body-public #preview {background: transparent}
 
-#body-public #header-public {border-bottom: 1px solid #DDD;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 0 !important; position: relative; height: 140px}
-#body-public #header-top {background: #F45D00;padding: 10px 20px;}
+#body-public #header {border-bottom: 1px solid #DDD;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 0 !important; position: relative; height: 140px}
+#body-public #header #header-top {background: #F45D00;padding: 10px 20px;}
 
 #body-public .searchbox {padding-top: 125px;}
 #body-public .searchbox input[type="search"] {border: 1px solid #DDD;}
