@@ -4,18 +4,9 @@ class OC_Theme {
     private $ThemeName;
 
     function __construct() {
-        $this->themeName = "B2DROP";
+        $this->themeName = "b2drop";
         $this->slogan = "Sync and Exchange Research Data";
-        $this->themeFooter = '<!--
-            <div class="footer_links">
-                <span>
-	        <a href="https://b2drop.eudat.eu/pwm">Register</a>
-                <a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a>
-                <a href="https://b2drop.eudat.eu/FAQ.pdf">FAQ</a>
-                <a href="http://www.eudat.eu/support-request?Service=B2DROP">Contact</a>
-                </span>
-            </div>-->
-            
+        $this->themeFooter = '
 		<footer>
 			<div class="container">
 				<div class="row">
@@ -34,7 +25,7 @@ class OC_Theme {
 				</div>
 			</div>
 		</footer> ';
-        $this->baseUrl = "http://owncloud";
+        $this->baseUrl = "https://b2drop.eudat.eu";
     }
    
     public function getTitle() {
