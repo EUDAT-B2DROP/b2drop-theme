@@ -97,7 +97,7 @@ li.deposit-title a {color: #000;}
 #body-user #header, #body-settings #header {height: 210px;}
 #body-user #header #header-top, #body-public #header #header-top {background: #F45D00;padding: 0px 20px;}
 #controls {top: 210px;}
-#content-wrapper {padding-top: 210px;}
+#body-public #content, #content-wrapper {padding-top: 210px;}
 #body-user #header, #body-settings #header, #body-public #header {background: #FFF;}
 #header .logo-icon {background-image: url("/themes/b2drop/core/img/logo.png");height: 128px;width: 232px;}
 
