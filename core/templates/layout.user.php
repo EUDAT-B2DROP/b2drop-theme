@@ -61,14 +61,14 @@
 	<header><div id="header">
 		
 		<div id="header-top">
-			<a href="http://www.eudat.eu">GO TO EUDAT WEBSITE</a>
+			<a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
 		</div>
 		
 			<div id="gb_menu">
 				<ul>
-					<li><a target="_blank" href="http://www.eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
+					<li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
 					<li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
-					<li><a target="_blank" href="http://www.eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+					<li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
 				</ul>
 			</div>
 

@@ -50,7 +50,7 @@
 			<div class="container">
 				<div class="row">
 				  <div class="col-md-12">
-					  <a href="http://www.eudat.eu">GO TO EUDAT WEBSITE</a>
+					  <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
 				  </div>
 				</div>
 			</div>
@@ -77,10 +77,10 @@
 							    
 								<div class="collapse navbar-collapse" id="gb_menu">
 									<ul id="menu" class="nav navbar-nav">
-										<li><a target="_blank" href="http://www.eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
+										<li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
 										<li><a href="/pwm">REGISTER</a></li>
 										<li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
-										<li><a target="_blank" href="http://www.eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+										<li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
 									</ul>
 								</div>
 							</div>
@@ -101,7 +101,7 @@
 						<div class="description-home">
 							<h1>B2DROP</h1>
 							<p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their research data synchronized and up-to-date and to exchange with other researchers.</p>
-								<a class="btn btn-default" href="http://www.eudat.eu/services/b2drop">Read more</a>
+								<a class="btn btn-default" href="https://eudat.eu/services/b2drop">Read more</a>
 						</div>
 						
 						<!-- END CONTENT LEFT -->

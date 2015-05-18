@@ -15,7 +15,7 @@ class OC_Theme {
 						<nav class="navbar navbar-footer">
 							<ul id="menu" class="nav navbar-nav navbar-right pull-right">
 								<li><a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a></li>
-								<li><a target="_blank" href="http://www.eudat.eu/what-eudat">About EUDAT</a></li>
+								<li><a target="_blank" href="https://eudat.eu/what-eudat">About EUDAT</a></li>
 							</ul>
 						</nav>
 					</div>
