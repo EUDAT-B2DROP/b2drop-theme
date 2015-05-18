@@ -1,8 +1,5 @@
 <?php
 class OC_Theme {
-
-    private $ThemeName;
-
     function __construct() {
         $this->themeName = "b2drop";
         $this->slogan = "Sync and Exchange Research Data";
