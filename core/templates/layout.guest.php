@@ -127,7 +127,26 @@
 		</div>
 
 	</div>
-    <?php print_unescaped($theme->getLongFooter()); ?>
+		<footer>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-xs-12 col-sm-6 col-md-6">
+						<p><img width="45" height="31" src="/themes/b2drop/core/img/flag-ce.jpg" style="float:left; margin-right:10px;"/> EUDAT receives funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 654065. <a href="#">Legal Notice</a>.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 text-right">
+						<nav class="navbar navbar-footer">
+							<ul id="menu" class="nav navbar-nav navbar-right pull-right">
+								<li><a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a></li>
+								<li><a target="_blank" href="http://www.eudat.eu/what-eudat">About EUDAT</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer> 		
+
+		<?php // print_unescaped($theme->getLongFooter()); ?>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
