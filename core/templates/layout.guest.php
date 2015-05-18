@@ -35,10 +35,10 @@
 		
     <!-- Bootstrap -->
     <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- Custom css -->
+    <!-- Custom css
+    <link href="/themes/b2drop/core/css/style.css" rel="stylesheet" type="text/css"/> -->
     <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="/themes/b2drop/core/css/style.css" rel="stylesheet" type="text/css"/>
-    
+
     
 	</head>
 	<body id="body-login">

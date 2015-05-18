@@ -30,9 +30,9 @@
 				print_unescaped('/>');
 			?>
 		<?php endforeach; ?>
-		
-		    <link href="/themes/b2drop/core/css/style.css" rel="stylesheet"/>
-		    
+
+        <!-- <link href="/themes/b2drop/core/css/style.css" rel="stylesheet"/> -->
+
 	</head>
 	<body id="body-public">
 		<noscript><div id="nojavascript"><div><?php print_unescaped($l->t('This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.')); ?></div></div></noscript>
