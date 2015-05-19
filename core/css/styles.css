@@ -26,7 +26,7 @@ html,body{height:100%;margin:0; color: #333;font-family: Arial, Verdana, sans-se
 #header-top {background: #F45D00 !important;padding: 5px 0;}
 #header-top a {color: #FFFFFF;}
 #body-login #header {padding: 1% 0;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat top right;}
-body>#page {height: auto;min-height: 600px;background: url("/themes/b2drop/core/img/bg_page.png") no-repeat left center; position: relative; padding-bottom: 94px;}
+body>#page {height: auto;min-height: 800px;background: url("/themes/b2drop/core/img/bg_page.png") no-repeat left center; position: relative; padding-bottom: 94px;}
 body.internalpage {background: #FFFFFF; padding: 0;}
 body.internalpage>#page { background-image: none !important; padding: 20px 0;}
 .description-home {margin-top: 80px;}
@@ -152,8 +152,7 @@ li.deposit-title a {color: #000;}
 
 #body-public #preview {background: transparent; padding-top: 210px; }
 #body-public #controls {
-    position: absolute;
-    top: 140px;
+    top: 185px;
 }
 
 #body-public #header-public {border-bottom: 1px solid #DDD;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 0 !important; position: relative; height: 140px}
@@ -171,9 +170,7 @@ li.deposit-title a {color: #000;}
 #body-public footer {display: none}
 
 #body-public #filestable {
-    position: absolute;
     top: 185px;
-    width: 100%;
 }
 
 .header {position: fixed;z-index: 999; width: 100%}

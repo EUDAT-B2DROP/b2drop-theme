@@ -38,12 +38,10 @@
         print_unescaped('/>');
         ?>
     <?php endforeach; ?>
-
     <!-- Bootstrap -->
-    <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- Custom css -->
-    <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
+    <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body id="body-login">
 <noscript>
@@ -51,8 +49,6 @@
         <div><?php print_unescaped($l->t('This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.')); ?></div>
     </div>
 </noscript>
-
-
 
 <div id="header-top">
     <div class="container">
@@ -75,7 +71,8 @@
                     <div class="container-fluid">
 
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gb_menu">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#gb_menu">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -88,7 +85,8 @@
                                 <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                                 <li><a href="/pwm">REGISTER</a></li>
                                 <li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
-                                <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+                                <li><a target="_blank"
+                                       href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>
@@ -102,57 +100,33 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-5 col-md-5">
-
                 <!-- BEGIN CONTENT LEFT -->
-
-
                 <div class="description-home">
                     <h1>B2DROP</h1>
-                    <p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their research data synchronized and up-to-date and to exchange with other researchers.</p>
+
+                    <p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their
+                        research data synchronized and up-to-date and to exchange with other researchers.</p>
                     <a class="btn btn-default" href="https://eudat.eu/services/b2drop">Read more</a>
                 </div>
-
                 <!-- END CONTENT LEFT -->
             </div>
-
             <div class="col-xs-12 col-sm-1 col-md-1 description-home">
             </div>
-
             <div class="col-xs-12 col-sm-6 col-md-6 description-home">
-
-
-
                 <?php print_unescaped($_['content']); ?>
                 <p id="registe_link">Not registered yet? <a href="/pwm">CLICK HERE</a></p>
-                <div class="push"></div><!-- for sticky footer -->
 
-
-
+                <div class="push"></div>
+                <!-- for sticky footer -->
             </div>
         </div>
     </div>
-
-
 </div>
 
 </div>
+
 <footer>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <p><img width="45" height="31" src="/themes/b2drop/core/img/flag-ce.jpg" style="float:left; margin-right:10px;"/> EUDAT receives funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 654065. <a href="#">Legal Notice</a>.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-6 text-right">
-                <nav class="navbar navbar-footer">
-                    <ul id="menu" class="nav navbar-nav navbar-right pull-right">
-                        <li><a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a></li>
-                        <li><a target="_blank" href="http://www.eudat.eu/what-eudat">About EUDAT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
+    <?php print_unescaped($theme->getLongFooter()); ?>
 </footer>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
