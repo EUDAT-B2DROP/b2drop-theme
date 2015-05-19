@@ -37,7 +37,10 @@
         ?>
     <?php endforeach; ?>
     <!-- Bootstrap -->
-    <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom css -->
+    <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
 
 </head>
 <body id="body-public">
@@ -48,64 +51,46 @@
     </div>
 </noscript>
 
-<div id="header-top">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
+<div class="header">
+    <div id="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div id="header-public">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-3 col-md-3">
-                <a href="/"><img width="232" height="128" src="/themes/b2drop/core/img/logo.png" alt=""/></a>
-            </div>
-            <div class="col-xs-12 col-sm-9 col-md-9">
+    <div id="header-public">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <a href="/"><img width="232" height="128" src="/themes/b2drop/core/img/logo.png" alt=""/></a>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9">
 
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#gb_menu">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="gb_menu">
-                            <ul id="menu" class="nav navbar-nav">
-                                <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
-                                <li><a href="/pwm">REGISTER</a></li>
-                                <li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
-                                <li><a target="_blank"
-                                       href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
-                            </ul>
-                        </div>
+                    <div id="gb_menu">
+                        <ul>
+                            <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
+                            <li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
+                            <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<div id="page">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
 
-                <?php print_unescaped($_['content']); ?>
 
-            </div>
-        </div>
-    </div>
-</div>
+
+<?php print_unescaped($_['content']); ?>
+
+
+
 
 
 <footer>

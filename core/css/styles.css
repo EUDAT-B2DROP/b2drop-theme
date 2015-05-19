@@ -146,11 +146,12 @@ li.deposit-title a {color: #000;}
 /***** LAYOUT SETTINGS ****/
 
 #body-public .searchbox {display: block}
-#body-public #header {background: transparent}
+#body-public #header {background: #DDD;}
 #body-public #header .logo-wide {display: none}
 #body-public #header #save-button, #body-public #header #download {background: #33549A; color: #FFF; border: 0;height: 28px; margin:0 10px 0 0; padding:7px 10px; font-size: 12px;}
 
-#body-public #preview {background: transparent}
+#body-public #preview {background: transparent; padding-top: 210px; }
+#body-public #preview #controls {padding-top: 10px; }
 
 #body-public #header-public {border-bottom: 1px solid #DDD;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 0 !important; position: relative; height: 140px}
 #body-public #header-top {background: #F45D00;padding: 10px 20px;}
@@ -158,15 +159,23 @@ li.deposit-title a {color: #000;}
 #body-public .searchbox {padding-top: 125px;}
 #body-public .searchbox input[type="search"] {border: 1px solid #DDD;}
 
-#body-public header #header #gb_menu {position: absolute; left:350px; top: 80px;}
-#body-public header #header #gb_menu ul li {display: inline-block; padding: 0 10px;}
-#body-public header #header #gb_menu ul > li > a {color: #222222 !important;font-weight: 500;font-size: 16px;}
-#body-public header #header #gb_menu ul > li > a:hover {color: #E5601E !important;font-weight: 500;font-size: 16px;}
+#body-public #header-public #gb_menu {position: absolute; left:350px; top: 60px;}
+#body-public #header-public #gb_menu ul li {display: inline-block; padding: 0 10px;}
+#body-public #header-public #gb_menu ul > li > a {color: #222222 !important;font-weight: 500;font-size: 16px;}
+#body-public #header-public #gb_menu ul > li > a:hover {color: #E5601E !important;font-weight: 500;font-size: 16px;}
 #body-public footer {background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;padding: 20px 10px 10px 10px;font-size: 12px;}
 
-#body-public #page footer {display: none}
+#body-public footer {display: none}
 
+#body-public #filestable {
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.header {position: fixed;z-index: 999; width: 100%}
 
 @media (max-width: 767px) {
 	#body-settings header #header #gb_menu {display: none;}
+	#body-public #header-public #gb_menu {display: none;}
 }

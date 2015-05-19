@@ -102,13 +102,12 @@
                         id="expandDisplayName"><?php p(trim($_['user_displayname']) != '' ? $_['user_displayname'] : $_['user_uid']) ?></span>
 					<img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/caret.svg')); ?>"/>
 				</span>
-
             <div id="expanddiv">
                 <ul>
-                    <?php foreach ($_['settingsnavigation'] as $entry): ?>
+                    <?php foreach($_['settingsnavigation'] as $entry):?>
                         <li>
                             <a href="<?php print_unescaped($entry['href']); ?>" title=""
-                                <?php if ($entry["active"]): ?> class="active"<?php endif; ?>>
+                                <?php if( $entry["active"] ): ?> class="active"<?php endif; ?>>
                                 <img class="svg" alt="" src="<?php print_unescaped($entry['icon']); ?>">
                                 <?php p($entry['name']) ?>
                             </a>
@@ -116,9 +115,8 @@
                     <?php endforeach; ?>
                     <li>
                         <a id="logout" <?php print_unescaped(OC_User::getLogoutAttribute()); ?>>
-                            <img class="svg" alt=""
-                                 src="<?php print_unescaped(image_path('', 'actions/logout.svg')); ?>"/>
-                            <?php p($l->t('Log out')); ?>
+                            <img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/logout.svg')); ?>" />
+                            <?php p($l->t('Log out'));?>
                         </a>
                     </li>
                 </ul>
@@ -127,24 +125,19 @@
 
         <form class="searchbox" action="#" method="post">
             <input id="searchbox" class="svg" type="search" name="query"
-                   value="<?php if (isset($_POST['query'])) {
-                       p($_POST['query']);
-                   }; ?>"
-                   autocomplete="off" x-webkit-speech/>
+                   value="<?php if(isset($_POST['query'])) {p($_POST['query']);};?>"
+                   autocomplete="off" x-webkit-speech />
         </form>
-    </div>
-</header>
+    </div></header>
 
-<nav>
-    <div id="navigation">
+<nav><div id="navigation">
         <div id="apps" class="svg">
             <ul>
-                <?php foreach ($_['navigation'] as $entry): ?>
+                <?php foreach($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>">
                         <a href="<?php print_unescaped($entry['href']); ?>" title=""
-                            <?php if ($entry['active']): ?> class="active"<?php endif; ?>>
+                            <?php if( $entry['active'] ): ?> class="active"<?php endif; ?>>
                             <img class="app-icon svg" alt="" src="<?php print_unescaped($entry['icon']); ?>"/>
-
                             <div class="icon-loading-dark" style="display:none;"></div>
 							<span>
 								<?php p($entry['name']); ?>
