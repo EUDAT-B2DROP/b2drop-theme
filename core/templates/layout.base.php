@@ -72,6 +72,7 @@
                     <div id="gb_menu">
                         <ul>
                             <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
+                            <li><a href="/pwm">REGISTER</a></li>
                             <li><a target="_blank" href="https://b2drop.eudat.eu/FAQ.pdf">FAQs</a></li>
                             <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a>
                             </li>
@@ -117,7 +118,7 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/themes/b2drop/core/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/themes/b2drop/core/js/bootstrap.min.js"></script>
 
