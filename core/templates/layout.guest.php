@@ -155,9 +155,6 @@
     </div>
 </footer>
 
-<?php // print_unescaped($theme->getLongFooter()); ?>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/themes/b2drop/core/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/themes/b2drop/core/js/bootstrap.min.js"></script>
 </body>
