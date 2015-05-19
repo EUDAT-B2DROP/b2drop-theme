@@ -52,15 +52,6 @@
 </noscript>
 
 <div class="header">
-    <div id="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <div id="header-public">
         <div class="container">
             <div class="row">
