@@ -36,8 +36,6 @@
         print_unescaped('/>');
         ?>
     <?php endforeach; ?>
-    <!-- Bootstrap -->
-
     <!-- Custom css -->
     <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
