@@ -211,6 +211,8 @@ li.deposit-title a {
     font-size: 15px;
     font-weight: 400;
     margin-right: 0;
+    width: auto;
+    position: relative;
 }
 
 #body-login form, #registe_link {
