@@ -206,7 +206,7 @@ li.deposit-title a {
 #body-login input[type="submit"] {
     border: 0;
     padding: 5px 30px;
-    background: #3C8BCE;
+    background-color: #3C8BCE;
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
