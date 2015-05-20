@@ -126,7 +126,7 @@
 </div>
 
 <footer>
-    <?php print_unescaped($theme->getLongFooter()); ?>
+    <?php print_unescaped($theme->getCompleteFooter()); ?>
 </footer>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
