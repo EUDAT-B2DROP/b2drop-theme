@@ -22,7 +22,7 @@ a:hover { color:#E5601E; }
 
 
 /*** STRUCTURE LAYOUT ***/
-html,body{height:100%;margin:0; color: #333;font-family: Arial, Verdana, sans-serif;}
+html,body{color: #333;font-family: Arial, Verdana, sans-serif;}
 #header-top {background: #F45D00 !important;padding: 5px 0;}
 #header-top a {color: #FFFFFF;}
 #body-login #header {padding: 1% 0;background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat top right;}
@@ -30,7 +30,7 @@ body>#page {height: auto;min-height: 800px;background: url("/themes/b2drop/core/
 body.internalpage {background: #FFFFFF; padding: 0;}
 body.internalpage>#page { background-image: none !important; padding: 20px 0;}
 .description-home {margin-top: 80px;}
-#body-login footer {background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;padding: 20px 10px 10px 10px;font-size: 12px;}
+footer {background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;padding: 20px 10px 10px 10px;font-size: 12px;}
 
 /*** GENERAL STYLE ELEMENTS ***/
 h1 {font-weight: 600;}
@@ -150,7 +150,6 @@ li.deposit-title a {color: #000;}
 #body-public #header .logo-wide {display: none}
 #body-public #header #save-button, #body-public #header #download {background: #33549A; color: #FFF; border: 0;height: 28px; margin:0 10px 0 0; padding:7px 10px; font-size: 12px;}
 
-#body-public #preview {background: transparent; padding-top: 210px; }
 #body-public #controls {
     top: 185px;
 }
@@ -165,9 +164,8 @@ li.deposit-title a {color: #000;}
 #body-public #header-public #gb_menu ul li {display: inline-block; padding: 0 10px;}
 #body-public #header-public #gb_menu ul > li > a {color: #222222 !important;font-weight: 500;font-size: 16px;}
 #body-public #header-public #gb_menu ul > li > a:hover {color: #E5601E !important;font-weight: 500;font-size: 16px;}
-#body-public footer {background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;padding: 20px 10px 10px 10px;font-size: 12px;}
+#body-public footer .info {display:none;}
 
-#body-public footer {display: none}
 
 #body-public #filestable {
     top: 185px;
