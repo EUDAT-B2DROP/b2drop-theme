@@ -3,7 +3,7 @@ class OC_Theme {
     function __construct() {
         $this->themeName = "b2drop";
         $this->slogan = "Sync and Exchange Research Data";
-        $this->themeFooter = '
+        $this->themeCompleteFooter = '
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
@@ -23,6 +23,16 @@ class OC_Theme {
             </div>
         </div>
         ';
+        $this->themeFooter = '
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 text-right">
+                </div>
+            </div>
+        </div>
+        ';
         $this->baseUrl = "https://b2drop.eudat.eu";
     }
    
@@ -32,6 +42,10 @@ class OC_Theme {
 
     public function getLongFooter() {
         return $this->themeFooter;
+    }
+
+    public function getCompleteFooter() {
+        return $this->themeCompleteFooter;
     }
 
     public function getName() {
