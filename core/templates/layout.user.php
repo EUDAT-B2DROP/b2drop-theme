@@ -57,20 +57,9 @@
 </div>
 <header>
     <div id="header">
-
         <div id="header-top">
             <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
         </div>
-
-        <div id="gb_menu">
-            <ul>
-                <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
-                <li><a href="https://b2drop.eudat.eu/FAQ.html">FAQs</a></li>
-                <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
-            </ul>
-        </div>
-
-
         <a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
            title="" id="owncloud" tabindex="-1">
             <div class="logo-icon svg">
@@ -91,7 +80,6 @@
             </div>
             <div class="icon-caret svg"></div>
         </a>
-
         <div id="logo-claim" style="display:none;"><?php p($theme->getLogoClaim()); ?></div>
         <div id="settings" class="svg">
 				<span id="expand" tabindex="0" role="link">
@@ -122,13 +110,20 @@
                 </ul>
             </div>
         </div>
-
         <form class="searchbox" action="#" method="post">
             <input id="searchbox" class="svg" type="search" name="query"
                    value="<?php if(isset($_POST['query'])) {p($_POST['query']);};?>"
                    autocomplete="off" x-webkit-speech />
         </form>
-    </div></header>
+        <div id="gb_menu">
+            <ul>
+                <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
+                <li><a href="https://b2drop.eudat.eu/FAQ.html">FAQs</a></li>
+                <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
 
 <nav><div id="navigation">
         <div id="apps" class="svg">
