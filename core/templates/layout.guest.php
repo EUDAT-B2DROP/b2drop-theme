@@ -84,7 +84,7 @@
                             <ul id="menu" class="nav navbar-nav">
                                 <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                                 <li><a href="/pwm">REGISTER</a></li>
-                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="/faq.html">FAQs</a></li>
                                 <li><a target="_blank"
                                        href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
                             </ul>
@@ -137,7 +137,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 text-right">
                 <nav class="navbar navbar-footer">
                     <ul id="menu" class="nav navbar-nav navbar-right pull-right">
-                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="/terms-of-use.html">Terms of Use</a></li>
                         <li><a target="_blank" href="https://eudat.eu/what-eudat">About EUDAT</a></li>
                     </ul>
                 </nav>
