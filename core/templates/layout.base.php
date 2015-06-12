@@ -62,7 +62,7 @@
                         <ul>
                             <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                             <li><a href="/pwm">REGISTER</a></li>
-                            <li><a href="/faq.html">FAQs</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
                             <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a>
                             </li>
                         </ul>
