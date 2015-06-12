@@ -137,7 +137,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 text-right">
                 <nav class="navbar navbar-footer">
                     <ul id="menu" class="nav navbar-nav navbar-right pull-right">
-                        <li><a href="https://b2drop.eudat.eu/ToU.pdf">Terms of Use</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
                         <li><a target="_blank" href="https://eudat.eu/what-eudat">About EUDAT</a></li>
                     </ul>
                 </nav>
