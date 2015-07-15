@@ -241,6 +241,10 @@ li.deposit-title a {
     color: #E5601E !important;
 }
 
+#body-login footer {
+    height: 90px;
+}
+
 /****** LAYOUT USER *****/
 
 #notification, #update-notification {
