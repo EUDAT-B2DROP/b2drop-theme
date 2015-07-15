@@ -78,9 +78,13 @@ body.internalpage > #page {
 
 footer {
     background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;
-    padding: 20px 10px 10px 10px;
+    padding: 20px 0px 0px 0px;
     font-size: 12px;
     height: 70px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 /*** GENERAL STYLE ELEMENTS ***/
@@ -237,6 +241,10 @@ li.deposit-title a {
     color: #E5601E !important;
 }
 
+#body-login footer {
+    height: 90px;
+}
+
 /****** LAYOUT USER *****/
 
 #notification, #update-notification {
@@ -289,8 +297,9 @@ li.deposit-title a {
 }
 
 #header .menutoggle h1 {
-    color: #333 !important;
+    color: #E5601E;
 }
+
 
 #header .menutoggle .icon-caret {
     background-color: #333;
@@ -414,6 +423,10 @@ li.deposit-title a {
 
 #body-public #header .logo-wide {
     display: none
+}
+
+#body-public #header.share-folder .logo-icon {
+    visibility: hidden;
 }
 
 #body-public #header #save-button, #body-public #header #download {

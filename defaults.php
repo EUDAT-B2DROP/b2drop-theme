@@ -5,8 +5,13 @@ class OC_Theme {
         $this->slogan = "Sync and Exchange Research Data";
         $this->themeFooter = '';
         $this->baseUrl = "https://b2drop.eudat.eu";
+        $this->iTunesAppId = "543672169";
     }
-   
+
+    public function getiTunesAppId() {
+        return $this->iTunesAppId;
+    }
+
     public function getTitle() {
         return $this->themeName;
     }
