@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="ng-csp ie ie6 lte9 lte8 lte7" data-placeholder-focus="false"
-      lang="<?php p($_['language']); ?>"><![endif]-->
-<!--[if IE 7]>
-<html class="ng-csp ie ie7 lte9 lte8 lte7" data-placeholder-focus="false"
-      lang="<?php p($_['language']); ?>"><![endif]-->
-<!--[if IE 8]>
+<!--[if lte IE 8]>
 <html class="ng-csp ie ie8 lte9 lte8" data-placeholder-focus="false" lang="<?php p($_['language']); ?>"><![endif]-->
 <!--[if IE 9]>
 <html class="ng-csp ie ie9 lte9" data-placeholder-focus="false" lang="<?php p($_['language']); ?>"><![endif]-->
-<!--[if gt IE 9]>
-<html class="ng-csp ie" data-placeholder-focus="false" lang="<?php p($_['language']); ?>"><![endif]-->
-<!--[if !IE]><!-->
+<!--[if (gt IE 9)|!(IE)]><!-->
 <html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>"><!--<![endif]-->
-
-<head data-user="<?php p($_['user_uid']); ?>" data-requesttoken="<?php p($_['requesttoken']); ?>">
+<head data-user="<?php p($_['user_uid']); ?>" data-requesttoken="<?php p($_['requesttoken']); ?>"
+    <?php if ($_['updateAvailable']): ?>
+        data-update-version="<?php print($_['updateVersion']); ?>" data-update-link="<?php print_unescaped($_['updateLink']); ?>"
+    <?php endif; ?>
+    >
+    <meta charset="utf-8">
     <title>
         <?php
         p(!empty($_['application']) ? $_['application'] . ' - ' : '');
         p($theme->getTitle());
         ?>
     </title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=543672169">
     <link rel="shortcut icon" href="<?php print_unescaped(image_path('', 'favicon.png')); ?>"/>
@@ -33,29 +28,13 @@
     <?php foreach ($_['jsfiles'] as $jsfile): ?>
         <script type="text/javascript" src="<?php print_unescaped($jsfile); ?>"></script>
     <?php endforeach; ?>
-    <?php foreach ($_['headers'] as $header): ?>
-        <?php
-        print_unescaped('<' . $header['tag'] . ' ');
-        foreach ($header['attributes'] as $name => $value) {
-            print_unescaped("$name='$value' ");
-        };
-        print_unescaped('/>');
-        ?>
-    <?php endforeach; ?>
+    <?php print_unescaped($_['headers']); ?>
 </head>
+
 <body id="<?php p($_['bodyid']); ?>">
-<noscript>
-    <div id="nojavascript">
-        <div><?php print_unescaped($l->t('This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.')); ?></div>
-    </div>
-</noscript>
+<?php include('layout.noscript.warning.php'); ?>
 <div id="notification-container">
     <div id="notification"></div>
-    <?php if ($_['updateAvailable']): ?>
-        <div id="update-notification" style="display: inline;"><a
-                href="<?php print_unescaped($_['updateLink']); ?>"><?php p($l->t('%s is available. Get more information on how to update.', array($_['updateVersion']))); ?></a>
-        </div>
-    <?php endif; ?>
 </div>
 <header>
     <div id="header">
@@ -85,20 +64,29 @@
 
         <div id="logo-claim" style="display:none;"><?php p($theme->getLogoClaim()); ?></div>
         <div id="settings" class="svg">
-				<span id="expand" tabindex="0" role="link">
-					<?php if ($_['enableAvatars']): ?>
-                        <div class="avatardiv"></div>
-                    <?php endif; ?>
-                    <span
-                        id="expandDisplayName"><?php p(trim($_['user_displayname']) != '' ? $_['user_displayname'] : $_['user_uid']) ?></span>
-					<img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/caret.svg')); ?>"/>
-				</span>
-
+            <div id="expand" tabindex="6" role="link">
+                <?php if ($_['enableAvatars']): ?>
+                    <div class="avatardiv<?php if ($_['userAvatarSet']) {
+                        print_unescaped(' avatardiv-shown');
+                    } else {
+                        print_unescaped('" style="display: none');
+                    } ?>">
+                        <?php if ($_['userAvatarSet']): ?>
+                            <img
+                                src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32])); ?>?requesttoken=<?php p(urlencode($_['requesttoken'])); ?>"
+                                alt="">
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
+                <span
+                    id="expandDisplayName"><?php p(trim($_['user_displayname']) != '' ? $_['user_displayname'] : $_['user_uid']) ?></span>
+                <img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/caret.svg')); ?>">
+            </div>
             <div id="expanddiv">
                 <ul>
                     <?php foreach ($_['settingsnavigation'] as $entry): ?>
                         <li>
-                            <a href="<?php print_unescaped($entry['href']); ?>" title=""
+                            <a href="<?php print_unescaped($entry['href']); ?>"
                                 <?php if ($entry["active"]): ?> class="active"<?php endif; ?>>
                                 <img class="svg" alt="" src="<?php print_unescaped($entry['icon']); ?>">
                                 <?php p($entry['name']) ?>
@@ -108,19 +96,23 @@
                     <li>
                         <a id="logout" <?php print_unescaped(OC_User::getLogoutAttribute()); ?>>
                             <img class="svg" alt=""
-                                 src="<?php print_unescaped(image_path('', 'actions/logout.svg')); ?>"/>
+                                 src="<?php print_unescaped(image_path('', 'actions/logout.svg')); ?>">
                             <?php p($l->t('Log out')); ?>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <form class="searchbox" action="#" method="post">
+
+        <form class="searchbox" action="#" method="post" role="search">
+            <label for="searchbox" class="hidden-visually">
+                <?php p($l->t('Search')); ?>
+            </label>
             <input id="searchbox" class="svg" type="search" name="query"
                    value="<?php if (isset($_POST['query'])) {
                        p($_POST['query']);
                    }; ?>"
-                   autocomplete="off" x-webkit-speech/>
+                   autocomplete="off" tabindex="5">
         </form>
         <div id="gb_menu">
             <ul>
@@ -132,15 +124,15 @@
     </div>
 </header>
 
-<nav>
+<nav role="navigation">
     <div id="navigation">
         <div id="apps" class="svg">
             <ul>
                 <?php foreach ($_['navigation'] as $entry): ?>
                     <li data-id="<?php p($entry['id']); ?>">
-                        <a href="<?php print_unescaped($entry['href']); ?>" title=""
+                        <a href="<?php print_unescaped($entry['href']); ?>" tabindex="3"
                             <?php if ($entry['active']): ?> class="active"<?php endif; ?>>
-                            <img class="app-icon svg" alt="" src="<?php print_unescaped($entry['icon']); ?>"/>
+                            <img class="app-icon svg" alt="" src="<?php print_unescaped($entry['icon']); ?>">
 
                             <div class="icon-loading-dark" style="display:none;"></div>
 							<span>
@@ -149,15 +141,16 @@
                         </a>
                     </li>
                 <?php endforeach; ?>
-
-                <!-- show "More apps" link to app administration directly in app navigation, as last entry -->
-                <?php if (OC_User::isAdminUser(OC_User::getUser())): ?>
+                <?php
+                /* show "More apps" link to app administration directly in app navigation, as last entry */
+                if (OC_User::isAdminUser(OC_User::getUser())):
+                    ?>
                     <li id="apps-management">
-                        <a href="<?php print_unescaped(OC_Helper::linkToRoute('settings_apps') . '?installed'); ?>"
-                           title=""
+                        <a href="<?php print_unescaped(\OC::$server->getURLGenerator()->linkToRoute('settings.AppSettings.viewApps')); ?>"
+                           tabindex="4"
                             <?php if ($_['appsmanagement_active']): ?> class="active"<?php endif; ?>>
                             <img class="app-icon svg" alt=""
-                                 src="<?php print_unescaped(OC_Helper::imagePath('settings', 'apps.svg')); ?>"/>
+                                 src="<?php print_unescaped(OC_Helper::imagePath('settings', 'apps.svg')); ?>">
 
                             <div class="icon-loading-dark" style="display:none;"></div>
 							<span>
@@ -173,7 +166,7 @@
 </nav>
 
 <div id="content-wrapper">
-    <div id="content" class="app-<?php p($_['appid']) ?>">
+    <div id="content" class="app-<?php p($_['appid']) ?>" role="main">
         <?php print_unescaped($_['content']); ?>
     </div>
 </div>
