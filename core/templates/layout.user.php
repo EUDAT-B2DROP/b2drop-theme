@@ -6,7 +6,6 @@
 		<?php if ($_['updateAvailable']): ?>
 			data-update-version="<?php print($_['updateVersion']); ?>" data-update-link="<?php print_unescaped($_['updateLink']); ?>"
 		<?php endif; ?>
-		>
 		<meta charset="utf-8">
 		<title>
 			<?php
@@ -41,14 +40,6 @@
         <div id="header-top">
             <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
         </div>
-        <a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
-            id="owncloud" tabindex="1">
-            <div class="logo-icon svg">
-                <h1 class="hidden-visually">
-                    <?php p($theme->getName()); ?>
-                </h1>
-            </div>
-        </a>
         <a href="#" class="header-appname-container menutoggle" tabindex="2">
             <h1 class="header-appname">
                 <?php
