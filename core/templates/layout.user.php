@@ -36,10 +36,18 @@
 <div id="notification-container">
     <div id="notification"></div>
 </div>
-<header role="banner"><div id="header">>
+<header role="banner"><div id="header">
         <div id="header-top">
             <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
         </div>
+        <a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
+            id="owncloud" tabindex="1">
+            <div class="logo-icon svg">
+                <h1 class="hidden-visually">
+                    <?php p($theme->getName()); ?>
+                </h1>
+            </div>
+        </a>
         <a href="#" class="header-appname-container menutoggle" tabindex="2">
             <h1 class="header-appname">
                 <?php
