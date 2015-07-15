@@ -15,12 +15,20 @@
     <link rel="shortcut icon" type="image/png" href="<?php print_unescaped(image_path('', 'favicon.png')); ?>">
     <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path('', 'favicon-touch.png')); ?>">
     <?php foreach ($_['cssfiles'] as $cssfile): ?>
-        <link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="screen">
+        <link rel="stylesheet" type="text/css" href="<?php print_unescaped($cssfile); ?>" media="screen">
     <?php endforeach; ?>
     <?php foreach ($_['jsfiles'] as $jsfile): ?>
-        <script src="<?php print_unescaped($jsfile); ?>"></script>
+        <script type="text/javascript" src="<?php print_unescaped($jsfile); ?>"></script>
     <?php endforeach; ?>
-    <?php print_unescaped($_['headers']); ?>
+    <?php foreach ($_['headers'] as $header): ?>
+        <?php
+        print_unescaped('<' . $header['tag'] . ' ');
+        foreach ($header['attributes'] as $name => $value) {
+            print_unescaped("$name='$value' ");
+        };
+        print_unescaped('/>');
+        ?>
+    <?php endforeach; ?>
     <!-- Custom css -->
     <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
