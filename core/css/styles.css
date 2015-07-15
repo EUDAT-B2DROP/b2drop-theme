@@ -417,6 +417,10 @@ li.deposit-title a {
     display: none
 }
 
+#body-public #header .share-folder .logo-icon {
+    visibility: hidden;
+}
+
 #body-public #header #save-button, #body-public #header #download {
     background: #33549A;
     color: #FFF;
