@@ -49,7 +49,7 @@ html, body {
     color: #FFFFFF;
 }
 
-#body-login #header {
+#body-login #header, #body-faq #header {
     padding: 1% 0;
     background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat top right;
 }
