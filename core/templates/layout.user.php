@@ -35,7 +35,7 @@
     <!-- Bootstrap -->
     <!--link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet"/-->
     <!-- Custom css -->
-    <link href="/themes/b2drop/core/css/style.css" rel="stylesheet"/>
+    <link href="/themes/b2drop/core/css/styles.css" rel="stylesheet"/>
     
     
 	</head>
