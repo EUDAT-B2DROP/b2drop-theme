@@ -22,9 +22,7 @@
 			<script type="text/javascript" src="<?php print_unescaped($jsfile); ?>"></script>
 		<?php endforeach; ?>
 		<?php print_unescaped($_['headers']); ?>
-		
-		    <link href="/themes/b2drop/core/css/styles.css" rel="stylesheet"/>
-		    
+
 	</head>
 	<body id="body-public">
 		<noscript><div id="nojavascript"><div><?php print_unescaped($l->t('This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.')); ?></div></div></noscript>
