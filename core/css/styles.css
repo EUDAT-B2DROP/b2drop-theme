@@ -78,12 +78,13 @@ body.internalpage > #page {
 
 footer {
     background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;
-    padding: 20px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    margin-top: 0px;
     font-size: 12px;
     height: 70px;
     bottom: 0;
     left: 0;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
