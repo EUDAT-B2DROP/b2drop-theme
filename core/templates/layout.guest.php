@@ -31,15 +31,17 @@
         <script type="text/javascript" src="<?php print_unescaped($jsfile); ?>"></script>
     <?php endforeach; ?>
 
-    <?php foreach ($_['headers'] as $header): ?>
-        <?php
-        print_unescaped('<' . $header['tag'] . ' ');
-        foreach ($header['attributes'] as $name => $value) {
-            print_unescaped("$name='$value' ");
-        };
-        print_unescaped('/>');
-        ?>
-    <?php endforeach; ?>
+    <?php
+      if (is_array($_['headers'])) {
+        foreach ($_['headers'] as $header) {
+          print_unescaped('<' . $header['tag'] . ' ');
+          foreach ($header['attributes'] as $name => $value) {
+              print_unescaped("$name='$value' ");
+          };
+          print_unescaped('/>');
+        }
+      }
+    ?>
     <!-- Bootstrap -->
     <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- Custom css -->
