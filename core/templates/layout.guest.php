@@ -43,9 +43,9 @@
       }
     ?>
     <!-- Bootstrap -->
-    <link href="/themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- Custom css -->
-    <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body id="body-login">
 <?php include('core/templates/layout.noscript.warning.php'); ?>
@@ -63,7 +63,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-3 col-md-3">
-                <a href="/"><img width="232" height="128" src="/themes/b2drop/core/img/logo.png" alt=""/></a>
+                <a href="./"><img width="232" height="128" src="./themes/b2drop/core/img/logo.png" alt=""/></a>
             </div>
             <div class="col-xs-12 col-sm-9 col-md-9">
 
@@ -84,7 +84,7 @@
                             <ul id="menu" class="nav navbar-nav">
                                 <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                                 <li><a href="/pwm">REGISTER</a></li>
-                                <li><a href="/themes/b2drop/faq.html">FAQs</a></li>
+                                <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
                                 <li><a target="_blank"
                                        href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
                             </ul>
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <p><img width="45" height="31" src="/themes/b2drop/core/img/flag-ce.jpg"
+                <p><img width="45" height="31" src="./themes/b2drop/core/img/flag-ce.jpg"
                         style="float:left; margin-right:10px;"/> EUDAT receives funding from the European Union’s
                     Horizon 2020 research and innovation programme under grant agreement No. 654065. <a href="#">Legal
                         Notice</a>.</p>
@@ -137,7 +137,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6 text-right">
                 <nav class="navbar navbar-footer">
                     <ul id="menu" class="nav navbar-nav navbar-right pull-right">
-                        <li><a href="/themes/b2drop/terms-of-use.html">Terms of Use</a></li>
+                        <li><a href="./themes/b2drop/terms-of-use.html">Terms of Use</a></li>
                         <li><a target="_blank" href="https://eudat.eu/what-eudat">About EUDAT</a></li>
                     </ul>
                 </nav>
@@ -147,6 +147,6 @@
 </footer>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="/themes/b2drop/core/js/bootstrap.min.js"></script>
+<script src="./themes/b2drop/core/js/bootstrap.min.js"></script>
 </body>
 </html>
