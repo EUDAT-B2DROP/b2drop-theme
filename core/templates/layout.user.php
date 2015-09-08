@@ -37,7 +37,7 @@
 </head>
 
 <body id="<?php p($_['bodyid']); ?>">
-<?php include('layout.noscript.warning.php'); ?>
+<?php include('core/templates/layout.noscript.warning.php'); ?>
 <div id="notification-container">
     <div id="notification"></div>
 </div>

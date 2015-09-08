@@ -46,11 +46,7 @@
     <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 </head>
 <body id="body-login">
-<noscript>
-    <div id="nojavascript">
-        <div><?php print_unescaped($l->t('This application requires JavaScript for correct operation. Please <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> and reload the page.')); ?></div>
-    </div>
-</noscript>
+<?php include('core/templates/layout.noscript.warning.php'); ?>
 
 <div id="header-top">
     <div class="container">

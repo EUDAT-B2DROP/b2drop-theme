@@ -35,7 +35,7 @@
 
 </head>
 <body id="body-public">
-<?php include('layout.noscript.warning.php'); ?>
+<?php include('core/templates/layout.noscript.warning.php'); ?>
 
 <div class="header">
     <div id="header-public">
