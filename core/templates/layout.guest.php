@@ -101,7 +101,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-5 col-md-5">
                 <!-- BEGIN CONTENT LEFT -->
-                <div class="description-home">
+                <div class="description-home hidden">
                     <h1>B2DROP</h1>
 
                     <p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their
