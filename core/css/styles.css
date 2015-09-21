@@ -51,13 +51,13 @@ html, body {
 
 #body-login #header, #body-faq #header {
     padding: 1% 0;
-    background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat top right;
+    background: #FFFFFF url("../img/img_header.png") no-repeat top right;
 }
 
 body > #page {
     height: auto;
     min-height: 800px;
-    background: url("/themes/b2drop/core/img/bg_page.png") no-repeat left center;
+    background: url("../img/bg_page.png") no-repeat left center;
     position: relative;
     padding-bottom: 94px;
 }
@@ -77,7 +77,7 @@ body.internalpage > #page {
 }
 
 footer {
-    background: #F7F3E9 url("/themes/b2drop/core/img/color-line.jpg") repeat-x top left;
+    background: #F7F3E9 url("../img/color-line.jpg") repeat-x top left;
     padding: 30px 0px 0px 0px;
     margin-top: 0px;
     font-size: 12px;
@@ -254,7 +254,7 @@ li.deposit-title a {
 
 #body-user #header {
     border-bottom: 1px solid #DDD;
-    background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 20% !important;
+    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 20% !important;
 }
 
 #body-user #header, #body-settings #header {
@@ -279,7 +279,7 @@ li.deposit-title a {
 }
 
 #header .logo-icon {
-    background-image: url("/themes/b2drop/core/img/logo.png");
+    background-image: url("../img/logo.png");
     height: 128px;
     width: 232px;
 }
@@ -373,7 +373,7 @@ li.deposit-title a {
 
 #body-settings #header {
     border-bottom: 1px solid #DDD;
-    background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 20% !important;
+    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 20% !important;
 }
 
 #body-settings #header #header-top {
@@ -446,7 +446,7 @@ li.deposit-title a {
 
 #body-public #header-public {
     border-bottom: 1px solid #DDD;
-    background: #FFFFFF url("/themes/b2drop/core/img/img_header.png") no-repeat 100% 0 !important;
+    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 0 !important;
     position: relative;
     height: 140px
 }

@@ -30,19 +30,19 @@
         ?>
     <?php endforeach; ?>
     <!-- Custom css -->
-    <link href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="./themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
 
 </head>
 <body id="body-public">
-<?php include('layout.noscript.warning.php'); ?>
+<?php include('core/templates/layout.noscript.warning.php'); ?>
 
 <div class="header">
     <div id="header-public">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-3 col-md-3">
-                    <a href="/"><img width="232" height="128" src="/themes/b2drop/core/img/logo.png" alt=""/></a>
+                    <a href="./"><img width="232" height="128" src="./themes/b2drop/core/img/logo.png" alt=""/></a>
                 </div>
                 <div class="col-xs-12 col-sm-9 col-md-9">
 
@@ -50,7 +50,7 @@
                         <ul>
                             <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                             <li><a href="/pwm">REGISTER</a></li>
-                            <li><a href="/themes/b2drop/faq.html">FAQs</a></li>
+                            <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
                             <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a>
                             </li>
                         </ul>
