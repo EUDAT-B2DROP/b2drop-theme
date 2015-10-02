@@ -37,7 +37,7 @@
 </head>
 
 <body id="<?php p($_['bodyid']); ?>">
-<?php include('layout.noscript.warning.php'); ?>
+<?php include('core/templates/layout.noscript.warning.php'); ?>
 <div id="notification-container">
     <div id="notification"></div>
 </div>
@@ -123,7 +123,7 @@
         <div id="gb_menu">
             <ul>
                 <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
-                <li><a href="/themes/b2drop/faq.html">FAQs</a></li>
+                <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
                 <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
             </ul>
         </div>
