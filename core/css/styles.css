@@ -332,6 +332,11 @@ li.deposit-title a {
 
 .searchbox input[type="search"] {
     border: 1px solid #DDD;
+
+}
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active {
+    color: #112;
+    background-color: #fff;
 }
 
 #body-user header #header #gb_menu {
@@ -459,6 +464,10 @@ li.deposit-title a {
     padding-top: 125px;
 }
 
+.searchbox input[type="search"] {
+    background: transparent url("../img/actions/search-black.svg")  no-repeat 6px center;
+}
+
 #body-public .searchbox input[type="search"] {
     border: 1px solid #DDD;
 }
@@ -508,4 +517,8 @@ li.deposit-title a {
     #body-public #header-public #gb_menu {
         display: none;
     }
+}
+
+#app-sidebar{
+    top: 210px;
 }
