@@ -522,3 +522,8 @@ li.deposit-title a {
 #app-sidebar{
     top: 210px;
 }
+
+table.multiselect thead {
+    position: fixed;
+    top: 250px;
+}
