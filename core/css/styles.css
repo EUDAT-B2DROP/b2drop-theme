@@ -10,10 +10,6 @@
     border: 1px solid #DDD;
 }
 
-#adminlogin, #adminpass, input[name="adminpass-clone"], #user, #password, input[name="password-clone"] {
-    width: 90% !important;
-}
-
 .hidden-visually {
     display: none;
 }
@@ -59,7 +55,6 @@ body > #page {
     min-height: 800px;
     background: url("../img/bg_page.png") no-repeat left center;
     position: relative;
-    padding-bottom: 94px;
 }
 
 body.internalpage {
@@ -220,17 +215,17 @@ li.deposit-title a {
     position: relative;
 }
 
-#body-login form, #registe_link {
+#body-login form, #register_link {
     margin: 1em auto;
     padding: 0;
     width: 70%;
 }
 
-#registe_link {
+#register_link {
     padding: 0 10px;
 }
 
-#registe_link a {
+#register_link a {
     color: #E5601E !important;
 }
 
