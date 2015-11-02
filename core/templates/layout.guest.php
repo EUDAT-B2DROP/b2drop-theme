@@ -86,7 +86,7 @@
                                 <li><a href="/pwm">REGISTER</a></li>
                                 <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
                                 <li><a target="_blank"
-                                       href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+                                       href="https://eudat.eu/support-request?service=B2DROP">CONTACT</a></li>
                             </ul>
                         </div>
                     </div>

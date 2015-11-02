@@ -124,7 +124,7 @@
             <ul>
                 <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
                 <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
-                <li><a target="_blank" href="https://eudat.eu/support-request?Service=B2DROP">CONTACT</a></li>
+                <li><a target="_blank" href="https://eudat.eu/support-request?service=B2DROP">CONTACT</a></li>
             </ul>
         </div>
     </div>
