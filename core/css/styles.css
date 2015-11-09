@@ -312,13 +312,15 @@ li.deposit-title a {
 
 #expanddiv {
     top: 210px;
+    position: fixed;
 }
 
 #settings {
     color: #333;
     cursor: pointer;
     float: right;
-    padding-top: 125px;
+    top: 125px;
+    position: relative;
 }
 
 #expand:hover, #expand:focus, #expand:active {
@@ -326,7 +328,7 @@ li.deposit-title a {
 }
 
 .searchbox {
-    padding-top: 125px;
+    top: 125px;
     position: relative;
 }
 
@@ -382,7 +384,7 @@ li.deposit-title a {
 }
 
 #body-settings .searchbox {
-    padding-top: 125px;
+    top: 125px;
 }
 
 #body-settings .searchbox input[type="search"] {
