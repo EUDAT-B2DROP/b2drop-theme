@@ -77,7 +77,7 @@
                     </div>
                     <?php endif; ?>
                     <span id="expandDisplayName"><?php  p(trim($_['user_displayname']) != '' ? $_['user_displayname'] : $_['user_uid']) ?></span>
-                    <img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/caret.svg')); ?>">
+                    <img class="svg" alt="" src="<?php print_unescaped(image_path('', 'actions/caret-dark.svg')); ?>">
                 </div>
                 <div id="expanddiv">
                 <ul>
