@@ -303,7 +303,7 @@ li.deposit-title a {
 
 
 #header .menutoggle .icon-caret {
-    background-color: #333;
+    background-image: url("/core/img/actions/caret-dark.svg");
 }
 
 #navigation {
@@ -325,6 +325,11 @@ li.deposit-title a {
 
 #expand:hover, #expand:focus, #expand:active {
     color: #E5601E !important;
+}
+
+#expand .svg {
+  top: 2px;
+  position: relative;
 }
 
 .searchbox {
