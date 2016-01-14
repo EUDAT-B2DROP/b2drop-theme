@@ -119,6 +119,7 @@
             </div>
         </footer>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="./themes/b2drop/core/js/theme-fixes.js"></script>
         <script src="./themes/b2drop/core/js/bootstrap.min.js"></script>
     </body>
 </html>

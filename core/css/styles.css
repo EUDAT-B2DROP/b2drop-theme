@@ -203,26 +203,24 @@ li.deposit-title a {
     padding: 0;
 }
 
-#body-login input[type="submit"] {
-    border: 0;
-    padding: 5px 30px;
-    background-color: #3C8BCE;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 400;
-    margin-right: 0;
-    width: auto;
-    position: relative;
+#body-login input[type="password"] {
+    padding-right: 10px;
+    box-sizing: initial;
+    min-width: initial;
+    border-top: unset;
+}
+
+#body-login .groupbottom input {
+    box-shadow: unset !important;
 }
 
 #body-login form, #register_link {
     margin: 1em auto;
-    padding: 0;
-    width: 70%;
 }
 
 #register_link {
     padding: 0 10px;
+    width: 280px;
 }
 
 #register_link a {
