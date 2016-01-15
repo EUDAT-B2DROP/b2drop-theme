@@ -101,11 +101,12 @@
         <footer role="contentinfo">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <p><img width="45" height="31" src="./themes/b2drop/core/img/flag-ce.jpg"
-                                style="float:left; margin-right:10px;"/> EUDAT receives funding from the European Union’s
-                            Horizon 2020 research and innovation programme under grant agreement No. 654065. <a href="#">Legal
-                                Notice</a>.</p>
+                    <div class="col-xs-12 col-sm-1 col-md-1">
+                        <img src="./themes/b2drop/core/img/flag-ce.jpg"/>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-md-5">
+                        EUDAT receives funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 654065.
+                        <a href="#">Legal Notice</a>.
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 text-right">
                         <nav class="navbar navbar-footer">

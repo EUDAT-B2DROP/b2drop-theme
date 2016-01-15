@@ -242,6 +242,10 @@ li.deposit-title a {
     height: 90px;
 }
 
+#body-login footer .navbar-footer, #body-faq footer .navbar-footer {
+    margin-bottom: unset;
+}
+
 /****** LAYOUT USER *****/
 
 #notification, #update-notification {
