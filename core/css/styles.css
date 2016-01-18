@@ -79,7 +79,7 @@ footer {
     padding: 30px 0px 0px 0px;
     margin-top: 0px;
     font-size: 12px;
-    height: 70px;
+    height: 90px !important;
     bottom: 0;
     left: 0;
     position: relative;
@@ -239,7 +239,7 @@ li.deposit-title a {
 }
 
 #body-login footer {
-    height: 90px;
+    position: absolute;
 }
 
 #body-login footer .navbar-footer, #body-faq footer .navbar-footer {
