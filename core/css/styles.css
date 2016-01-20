@@ -145,6 +145,10 @@ a {
     margin: 20px 0;
 }
 
+#body-login .navbar-default {
+  margin-left: 20px;
+}
+
 /**** DEPOSIT AREA - HOME PAGE ****/
 #deposit-area {
     background: #EEE;
