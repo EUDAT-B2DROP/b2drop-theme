@@ -27,7 +27,6 @@
         <link href="./themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body id="<?php p($_['bodyid']);?>">
-    <?php include('layout.noscript.warning.php'); ?>
         <?php if ($_['bodyid'] === 'body-login' ): ?>
         <div id="header-top">
             <div class="container">
