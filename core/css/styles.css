@@ -410,7 +410,7 @@ a {
 
 #body-public .header-appname {
     font-family: Arial, Verdana, sans-serif;
-    color: #33549A;
+    color: #204d74;
     font-size: 24px;
 }
 
@@ -451,6 +451,6 @@ a {
 }
 
 #body-user table.multiselect thead {
-    position: fixed;
     top: 220px;
+    padding-top: 33px;
 }
