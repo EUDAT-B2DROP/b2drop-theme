@@ -1,4 +1,3 @@
-/*  Theme example. Override the main style and make links red */
 
 /* HEADERS */
 #body-login {
@@ -149,52 +148,6 @@ a {
   margin-left: 20px;
 }
 
-/**** DEPOSIT AREA - HOME PAGE ****/
-#deposit-area {
-    background: #EEE;
-    padding: 10px 20px;
-    line-height: 65px;
-}
-
-#deposit-area h1 {
-    margin-top: 10px !important;
-}
-
-.deposit {
-    border-bottom: 0;
-    list-style-type: none;
-    padding: 5px 0;
-}
-
-ol.deposit-list {
-    -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 20px;
-    column-count: 2;
-    column-gap: 20px;
-}
-
-.deposit li {
-    font-size: 12px;
-    line-height: 18px;
-    list-style-type: none;
-}
-
-li.deposit-date {
-    font-weight: 600;
-    color: #337AB7;
-}
-
-li.deposit-title {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-li.deposit-title a {
-    color: #000;
-}
-
 /*** OLD CSS STYLE ***/
 .right-not-rounded {
     border-bottom-right-radius: 0;
@@ -274,8 +227,9 @@ li.deposit-title a {
     top: 210px;
 }
 
-#content-wrapper {
-    padding-top: 210px;
+#body-user #content-wrapper {
+    top: 0px;
+    padding-top: 170px;
 }
 
 #body-user #header, #body-settings #header, #body-public #header {
@@ -284,11 +238,20 @@ li.deposit-title a {
 
 #header .logo-icon {
     background-image: url("../img/logo.png");
+}
+
+#body-public #header .logo-icon{
+    background-image: url("../img/logo-share.png");
+    width:125px;
+    height: 45px;
+}
+
+#body-user #header .logo-icon, #body-settings #header .logo-icon  {
     height: 128px;
     width: 232px;
 }
 
-#owncloud {
+#body-user #owncloud, #body-settings #owncloud {
     top: 35px;
     left: 20px;
 }
@@ -305,6 +268,10 @@ li.deposit-title a {
     color: #E5601E;
 }
 
+
+#header-eudat {
+    top: 45px;
+}
 
 #header .menutoggle .icon-caret {
     background-color: #333;
@@ -421,51 +388,30 @@ li.deposit-title a {
     font-size: 16px;
 }
 
-/***** LAYOUT SETTINGS ****/
+/***** SHARE SCREEN  SETTINGS ****/
 
-#body-public .searchbox {
-    display: block
-}
-
-#body-public #header {
-    background: #DDD;
-}
-
-#body-public #header .logo-wide {
-    display: none
-}
-
-#body-public #header.share-folder .logo-icon {
-    visibility: hidden;
+#body-public #owncloud {
+    padding: 0px 0px 0px 0px;
+    left: 10px;
 }
 
 #body-public #header #save-button, #body-public #header #download {
     background: #33549A;
     color: #FFF;
-    border: 0;
-    height: 28px;
-    margin: 0 10px 0 0;
-    padding: 7px 10px;
-    font-size: 12px;
-}
-
-#body-public #controls {
-    top: 185px;
-}
-
-#body-public #header-public {
-    border-bottom: 1px solid #DDD;
-    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 0 !important;
-    position: relative;
-    height: 140px
 }
 
 #body-public #header {
     background: #F45D00;
 }
 
-#body-public .searchbox {
-    padding-top: 125px;
+#body-public .header-appname-container {
+    left: 100px;
+}
+
+#body-public .header-appname {
+    font-family: Arial, Verdana, sans-serif;
+    color: #33549A;
+    font-size: 24px;
 }
 
 .searchbox input[type="search"] {
@@ -476,36 +422,13 @@ li.deposit-title a {
     border: 1px solid #DDD;
 }
 
-#body-public #header-public #gb_menu {
-    position: absolute;
-    left: 350px;
-    top: 60px;
-}
-
-#body-public #header-public #gb_menu ul li {
-    display: inline-block;
-    padding: 0 10px;
-}
-
-#body-public #header-public #gb_menu ul > li > a {
-    color: #222222 !important;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-#body-public #header-public #gb_menu ul > li > a:hover {
-    color: #E5601E !important;
-    font-weight: 500;
-    font-size: 16px;
-}
-
 #body-public footer .info {
     display: none;
 }
-
-#body-public #filestable {
-    top: 185px;
-}
+#body-public footer {
+    background: #F7F3E9 url("../img/color-line.jpg") repeat-x top left;
+    height: 20px !important;
+ }
 
 .header {
     position: fixed;
@@ -518,7 +441,7 @@ li.deposit-title a {
         display: none;
     }
 
-    #body-public #header-public #gb_menu {
+    #body-public #header-eudat #gb_menu {
         display: none;
     }
 }
@@ -527,7 +450,7 @@ li.deposit-title a {
     top: 210px;
 }
 
-table.multiselect thead {
+#body-user table.multiselect thead {
     position: fixed;
-    top: 250px;
+    top: 220px;
 }
