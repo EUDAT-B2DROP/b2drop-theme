@@ -227,9 +227,8 @@ a {
     top: 210px;
 }
 
-#body-user #content-wrapper {
-    top: 0px;
-    padding-top: 170px;
+#body-user #content-wrapper,  #body-settings #content-wrapper {
+    padding-top: 210px;
 }
 
 #body-user #header, #body-settings #header, #body-public #header {
