@@ -276,11 +276,8 @@ a {
     top: 210px;
 }
 
-#expanddiv {
-    top: 210px;
-}
-
 div#navigation.menu, div#expanddiv.menu{
+    top: 210px;
     background-color: #33549A;
 }
 
