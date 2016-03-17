@@ -1,17 +1,7 @@
-<!-- You have to cpoy this file in owncloud root-directory-->
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="ng-csp ie ie6 lte9 lte8 lte7" data-placeholder-focus="false"><![endif]-->
-<!--[if IE 7]>
-<html class="ng-csp ie ie7 lte9 lte8 lte7" data-placeholder-focus="false"><![endif]-->
-<!--[if IE 8]>
-<html class="ng-csp ie ie8 lte9 lte8" data-placeholder-focus="false"><![endif]-->
-<!--[if IE 9]>
-<html class="ng-csp ie ie9 lte9" data-placeholder-focus="false"><![endif]-->
-<!--[if gt IE 9]>
-<html class="ng-csp ie" data-placeholder-focus="false"><![endif]-->
-<!--[if !IE]><!-->
-<html class="ng-csp" data-placeholder-focus="false"><!--<![endif]-->
+<!--[if lte IE 8]><html class="ng-csp ie ie8 lte9 lte8" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><![endif]-->
+<!--[if IE 9]><html class="ng-csp ie ie9 lte9" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" ><!--<![endif]-->
 
 <head data-requesttoken="f4XUAhYGMcn6dTo5p8OIViAouCd7tC">
     <title>b2drop</title>
@@ -19,65 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-itunes-app" content="app-id=543672169">
-    <link rel="shortcut icon" href="./themes/b2drop/core/img/favicon.png"/>
+    <link rel="shortcut icon" href="./core/img/favicon.png"/>
     <link rel="apple-touch-icon-precomposed" href="./themes/b2drop/core/img/favicon-touch.png"/>
-    <link rel="stylesheet" href="../../core/css/styles.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/header.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/mobile.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/icons.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/fonts.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/apps.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/fixes.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/multiselect.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/vendor/jquery-ui/themes/base/jquery-ui.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/jquery-ui-fixes.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/jquery-tipsy.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/jquery.ocdialog.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../core/css/share.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../apps/files_versions/css/versions.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../apps/eudat/css/style.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="../../themes/b2drop/core/css/styles.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
-    <script type="text/javascript" src="../../index.php/core/js/oc.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/jquery/jquery.min.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/jquery-migrate/jquery-migrate.min.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/jquery-ui/ui/jquery-ui.custom.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/underscore/underscore.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/moment/min/moment-with-locales.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/handlebars/handlebars.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/placeholders.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/jquery-tipsy.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/compatibility.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/jquery.ocdialog.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/oc-dialogs.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/js.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/l10n.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/l10n/en_GB.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/octemplate.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/eventsource.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/config.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/search/js/search.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/oc-requesttoken.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/apps.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/snapjs/dist/latest/snap.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/placeholder.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/vendor/blueimp-md5/js/md5.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/jquery.avatar.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/avatar.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/backgroundjobs.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/share.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/files_sharing/l10n/en_GB.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/files_sharing/js/share.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/files_sharing/js/external.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/files_versions/l10n/en_GB.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/files_versions/js/versions.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../apps/eudat/js/b2sharebridge.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/visitortimezone.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
-    <script type="text/javascript" src="../../core/js/lostpassword.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
 
-    <!-- Bootstrap -->
-    <link href="./core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <!-- Custom css -->
-    <link href="./core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="../../core/css/styles.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./core/css/styles.css?v=a5d1b7b4a73c55c69a3a74ecee1eff86" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./core/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./core/css/font-awesome/css/font-awesome.min.css" type="text/css"/>
+
+    <script type="text/javascript" src="../../core/vendor/jquery/jquery.min.js?v=a5d1b7b4a73c55c69a3a74ecee1eff86"></script>
 </head>
 <body id="body-faq">
 <noscript>
