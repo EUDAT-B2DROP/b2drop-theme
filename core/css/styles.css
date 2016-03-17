@@ -280,6 +280,10 @@ a {
     top: 210px;
 }
 
+div#navigation.menu, div#expanddiv.menu{
+    background-color: #33549A;
+}
+
 #settings {
     color: #333;
     cursor: pointer;
