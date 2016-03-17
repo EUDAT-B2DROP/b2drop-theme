@@ -9,10 +9,6 @@
     border: 1px solid #DDD;
 }
 
-.hidden-visually {
-    display: none;
-}
-
 a {
     color: #222;
 }
@@ -305,7 +301,7 @@ a {
     background: transparent url("../img/actions/search-black.svg")  no-repeat 6px center;
 }
 
-.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active {
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,  .searchbox input[type="search"]:valid {
     color: #112;
     background-color: #fff;
 }
