@@ -268,8 +268,8 @@ a {
     top: 45px;
 }
 
-#header .menutoggle .icon-caret {
-    background-color: #333;
+.icon-caret {
+    background-image: url('/core/img/actions/caret-dark.svg');
 }
 
 #navigation {
