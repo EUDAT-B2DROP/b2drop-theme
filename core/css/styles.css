@@ -293,17 +293,18 @@ a {
 
 .searchbox {
     padding-top: 125px;
-    position: relative;
 }
 
-.searchbox input[type="search"] {
-    border: 1px solid #DDD;
-    background: transparent url("../img/actions/search-black.svg")  no-repeat 6px center;
+.searchbox input[type="search"]:valid {
+    width: 0;
 }
 
-.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active,  .searchbox input[type="search"]:valid {
-    color: #112;
-    background-color: #fff;
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active {
+    width: 155px;
+}
+
+.searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
+    background-color: #33549A;
 }
 
 #body-user header #header #gb_menu {
