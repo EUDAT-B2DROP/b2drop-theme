@@ -191,7 +191,7 @@ a {
     color: #E5601E !important;
 }
 
-#body-login footer {
+#body-login footer, #body-faq footer {
     position: absolute;
 }
 
