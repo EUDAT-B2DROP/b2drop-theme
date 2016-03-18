@@ -70,7 +70,7 @@ body.internalpage > #page {
 }
 
 footer {
-    background: #F7F3E9 url("../img/color-line.jpg") repeat-x top left;
+    background: #F7F3E9 url("../img/color-line.png") repeat-x top left;
     padding: 30px 0px 0px 0px;
     margin-top: 0px;
     font-size: 12px;
@@ -404,7 +404,7 @@ div#navigation.menu, div#expanddiv.menu{
     display: none;
 }
 #body-public footer {
-    background: #F7F3E9 url("../img/color-line.jpg") repeat-x top left;
+    background: #F7F3E9 url("../img/color-line.png") repeat-x top left;
     height: 20px !important;
  }
 
