@@ -21,10 +21,12 @@
             <script src="<?php print_unescaped($jsfile); ?>"></script>
         <?php endforeach; ?>
         <?php print_unescaped($_['headers']); ?>
-        <!-- Bootstrap -->
-        <link href="./themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Custom css -->
-        <link href="./themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+        <link type="text/css" href="./themes/b2drop/core/css/bootstrap.min.css" rel="stylesheet"/>
+        <link type="text/css" href="./themes/b2drop/core/css/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+
+        <script type="text/javascript" src="./themes/b2drop/core/js/theme-fixes.js"></script>
+        <script type="text/javascript" src="./themes/b2drop/core/js/bootstrap.min.js"></script>
     </head>
     <body id="<?php p($_['bodyid']);?>">
         <?php if ($_['bodyid'] === 'body-login' ): ?>
@@ -118,9 +120,6 @@
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="./themes/b2drop/core/js/theme-fixes.js"></script>
-        <script src="./themes/b2drop/core/js/bootstrap.min.js"></script>
+        </footer
     </body>
 </html>
