@@ -192,7 +192,7 @@ a {
 }
 
 #body-login footer, #body-faq footer {
-    position: absolute;
+    position: sticky;
 }
 
 #body-login footer .navbar-footer, #body-faq footer .navbar-footer {
