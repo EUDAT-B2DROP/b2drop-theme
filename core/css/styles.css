@@ -243,7 +243,7 @@ li.deposit-title a {
 }
 
 #body-login footer {
-    position: absolute;
+    position: sticky;
 }
 
 #body-login footer .navbar-footer, #body-faq footer .navbar-footer {
