@@ -63,7 +63,7 @@
                                 <div class="collapse navbar-collapse" id="gb_menu">
                                     <ul id="menu" class="nav navbar-nav">
                                         <li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
-                                        <li><a href="/pwm">REGISTER</a></li>
+                                        <li><a href="/pwm/public/NewUser">REGISTER</a></li>
                                         <li><a target="_blank" href="https://eudat.eu/services/userdoc/b2drop">USER GUIDE</a></li>
                                         <li><a href="./themes/b2drop/faq.html">FAQs</a></li>
                                         <li><a target="_blank"
@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 description-home">
                         <?php print_unescaped($_['content']); ?>
-                        <p id="register_link">Not registered yet? <a href="/pwm">CLICK HERE</a></p>
+                        <p id="register_link">Not registered yet? <a href="/pwm/public/NewUser">CLICK HERE</a></p>
                     </div>
                 </div>
             </div>
