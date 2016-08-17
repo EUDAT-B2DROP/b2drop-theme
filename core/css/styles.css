@@ -282,7 +282,7 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 #settings {
-    color: #33549A;
+    color: #F45D00;
     cursor: pointer;
     float: right;
     padding-top: 125px;
@@ -305,7 +305,7 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
-    background-color: #33549A;
+    background-color: #F45D00;
 }
 
 #body-user header #header #gb_menu {
@@ -336,6 +336,17 @@ div#navigation.menu, div#expanddiv.menu{
         display: none;
     }
 }
+
+#expanddiv a {
+		display: block;
+		height: 40px;
+		color: #000;
+		background: #FFF;
+		padding: 4px 12px 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+		opacity: .95;
+		box-sizing: border-box;
+	}
 
 /****** END LAYOUT USER *****/
 
