@@ -40,7 +40,7 @@
             <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
         </div>
         <a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
-           id="owncloud" tabindex="1">
+           id="nextcloud" tabindex="1">
             <div class="logo-icon svg">
                 <h1 class="hidden-visually">
                     <?php p($theme->getName()); ?>
