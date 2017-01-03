@@ -345,7 +345,7 @@ div#navigation.menu, div#expanddiv.menu{
 		color: #000;
 		padding: 4px 12px 0;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-		opacity: .95;
+		opacity: .7;
 		box-sizing: border-box;
 	}
 
