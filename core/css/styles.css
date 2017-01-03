@@ -244,6 +244,8 @@ a {
 #body-user #header .logo-icon, #body-settings #header .logo-icon  {
     height: 128px;
     width: 232px;
+    margin-top: 35px;
+    margin-left: 20px;
 }
 
 #body-user #owncloud, #body-settings #owncloud {
