@@ -343,7 +343,6 @@ div#navigation.menu, div#expanddiv.menu{
 		display: block;
 		height: 40px;
 		color: #000;
-		background: #FFF;
 		padding: 4px 12px 0;
 		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 		opacity: .95;
