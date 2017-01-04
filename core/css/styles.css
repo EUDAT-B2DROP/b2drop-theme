@@ -21,7 +21,7 @@ a:hover {
     margin: 0;
 }
 
-.header-appname {
+.header-appname #expandDisplayName{
     font-weight: 400;
 }
 
