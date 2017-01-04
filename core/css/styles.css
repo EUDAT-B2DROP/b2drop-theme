@@ -22,7 +22,7 @@ a:hover {
 }
 
 .header-appname {
-    color: #E5601E
+    font-weight: 400;
 }
 
 /*** STRUCTURE LAYOUT ***/
