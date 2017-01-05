@@ -9,6 +9,14 @@
     border: 1px solid #DDD;
 }
 
+#body-login input[type="submit"] {
+    background-color: #f45d00;
+}
+
+#body-login input[type="submit"].primary:hover{
+    background-color: #E5601E;
+}
+
 a {
     color: #222;
 }
