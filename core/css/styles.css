@@ -157,6 +157,14 @@ a {
   margin-left: 20px;
 }
 
+.notification-delete img, .notifications-button img {
+    background-color: #F45D00;
+    height: 24px;
+    width: 24px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
 /*** OLD CSS STYLE ***/
 .right-not-rounded {
     border-bottom-right-radius: 0;
@@ -267,7 +275,7 @@ a {
 }
 
 #header .menutoggle {
-    padding-top: 5px;
+    padding-top: 125px;
     margin-left: 0px;
     padding-left: 0px;
     left: 0;
