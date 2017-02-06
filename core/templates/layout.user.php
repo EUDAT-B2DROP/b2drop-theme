@@ -24,8 +24,13 @@
         <?php foreach($_['cssfiles'] as $cssfile): ?>
             <link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="screen">
         <?php endforeach; ?>
+        <?php if (isset($_['inline_ocjs'])): ?>
+            <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" type="text/javascript">
+                <?php print_unescaped($_['inline_ocjs']); ?>
+            </script>
+        <?php endif; ?>
         <?php foreach($_['jsfiles'] as $jsfile): ?>
-            <script src="<?php print_unescaped($jsfile); ?>"></script>
+            <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
         <?php endforeach; ?>
         <?php print_unescaped($_['headers']); ?>
     </head>
@@ -40,7 +45,7 @@
             <a href="https://eudat.eu">GO TO EUDAT WEBSITE</a>
         </div>
         <a href="<?php print_unescaped(link_to('', 'index.php')); ?>"
-           id="owncloud" tabindex="1">
+           id="nextcloud" tabindex="1">
             <div class="logo-icon svg">
                 <h1 class="hidden-visually">
                     <?php p($theme->getName()); ?>
