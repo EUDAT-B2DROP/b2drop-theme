@@ -331,7 +331,7 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 .searchbox {
-    padding-top: 125px;
+    margin-top: -52px;
 }
 
 .searchbox input[type="search"]:valid {
@@ -343,7 +343,9 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
-    background-color: #F45D00;
+    background-color: #F45D00 !important;
+    float: right;
+    min-height: 30px;
 }
 
 #body-user header #header #gb_menu {
