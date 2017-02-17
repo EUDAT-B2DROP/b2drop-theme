@@ -29,6 +29,10 @@ a:hover {
     margin: 0;
 }
 
+.header-appname {
+    margin-top: -2px;
+}
+
 .header-appname #expandDisplayName{
     font-weight: 400;
 }
@@ -295,6 +299,10 @@ a {
 
 #header-eudat {
     top: 45px;
+}
+
+#header .icon-caret {
+    margin-top: 1px;
 }
 
 .icon-caret {
