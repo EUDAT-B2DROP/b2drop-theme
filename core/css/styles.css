@@ -1,4 +1,4 @@
-
+e
 /* HEADERS */
 #body-login {
     background: #FFFFFF; /* Old browsers */
@@ -233,6 +233,7 @@ a {
 
 #body-user #header, #body-settings #header {
     height: 210px;
+    display: block;
 }
 
 #body-user #header #header-top, #body-public #header #header-top {
