@@ -36,6 +36,8 @@ a:hover {
 /* Icon setting */
 #nextcloud {
     padding: 0px;
+    position: absolute;
+    top: 0;
 }
 
 /*** STRUCTURE LAYOUT ***/
