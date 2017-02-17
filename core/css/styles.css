@@ -340,6 +340,7 @@ div#navigation.menu, div#expanddiv.menu{
     position: absolute;
     left: 350px;
     top: 80px;
+    line-height:2.5em;
 }
 
 #body-user header #header #gb_menu ul li {
