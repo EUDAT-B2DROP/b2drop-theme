@@ -315,6 +315,7 @@ div#navigation.menu, div#expanddiv.menu{
     cursor: pointer;
     float: right;
     padding-top: 125px;
+    line-height: 2.5em
 }
 
 #expand:hover, #expand:focus, #expand:active {
