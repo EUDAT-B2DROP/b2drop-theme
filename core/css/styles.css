@@ -241,7 +241,7 @@ a {
 #body-user #header #header-top, #body-public #header #header-top {
     background: #F45D00;
     padding: 0px 20px;
-    height: 32px;
+    line-height: 2.5em;
 }
 
 #body-user #controls, #body-settings #controls {
