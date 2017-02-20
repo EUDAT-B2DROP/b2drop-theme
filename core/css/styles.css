@@ -1,5 +1,9 @@
 
 /* HEADERS */
+#body-user #header, #body-settings #header, #body-public #header {
+    line-height: 2.5em;
+}
+
 #body-login {
     background: #FFFFFF; /* Old browsers */
     text-align: left;
