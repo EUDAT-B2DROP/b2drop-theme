@@ -352,6 +352,10 @@ div#navigation.menu, div#expanddiv.menu{
     min-height: 30px;
 }
 
+.searchbox input[type="search"]:hover{
+    opacity: 1;
+}
+
 #body-user header #header #gb_menu {
     position: absolute;
     left: 350px;
