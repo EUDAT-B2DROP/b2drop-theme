@@ -444,6 +444,7 @@ div#navigation.menu, div#expanddiv.menu{
 #body-public #header #save-button, #body-public #header #download {
     background: #33549A;
     color: #FFF;
+    line-height: 0;
 }
 
 #body-public #header {
