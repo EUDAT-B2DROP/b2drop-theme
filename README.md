@@ -12,47 +12,59 @@
 
 ## Module Description
 
-This repository provides the B2DROP theme. It's a thin overlay for owncloud, to provide a common EUDAT look and feel.
+This repository provides the **B2DROP** theme. It's a thin overlay for Nextcloud, to provide the common EUDAT look and feel.
+
+We expect to run **B2DROP** directly at the document root of your webserver, for example served at [https://b2drop.eudat.eu](https://b2drop.eudat.eu). A leading _nextcloud_ (https://b2drop.eudat.eu/nextcloud) is not supported and will break the templates that we use.
 
 ## Install
 
-1. on your B2DROP server go to the <owncloud>/themes directory
+1. on your **B2DROP** server go to the <Nextcloud>/themes directory
 2. git clone this repository
-3. enable the theme via:
-creating <owncloud>/config/b2drop.config.php and adding:
+```
+git clone https://github.com/EUDAT-B2DROP/b2drop-theme.git b2drop
+```
+3. enable the theme via creating <Nextcloud>/config/b2drop.config.php and adding
 ```
 <?php
 $CONFIG = array (
-  \'theme\' => \'b2drop\',
+  'theme' => 'b2drop',
 );
 ```
-or the theme part to <owncloud>/config/config.php
+or only the the theme line directly to <Nextcloud>/config/config.php
+```
+./occ config:system:set theme --value b2drop
+```
 
 ## Development
 
 There are no formal requirements to participate. The development (enhancement, bugfixing) is done on the master branch.
-If a version is stable for the current owncloud version, a branch is created referring to the owncloud version (e.g. branch owncloud9). The branch is then used on the production systems.
+If a version is stable for the current Nextcloud version, a branch is created referring to the corresponding Nextcloud version (e.g. branch nextcloud11). The branch is then used on the production systems.
 
 ## Testing
 
 For testing your php code you need to install PHP_CodeSniffer and run:
+```
+phpcs --extensions=php --ignore=*/tests/*,*/templates/* .
+```
 
-    phpcs --extensions=php --ignore=*/tests/*,*/templates/* .
+Another way to directly test your code with your browser locally, when you have a php interpreter:
 
-Another way to directly test your code with your browser is via "ocdev". This is a tool provided by the owncloud developers, it requires python3 (virtualenv is suggested) and php. Some but not all instructions:
 
 ```
-pip install ocdev
-BRANCH=stable9
-THEME=<YOUR_LOCAL_REPO>
-
-ocdev setup core --dir owncloud --branch $BRANCH --no-history
-
-rsync -uvaPr --delete  --exclude “.git*” --exclude ".idea" $THEME/ owncloud/themes/b2drop
-cd owncloud
+export CORE_BRANCH=stable11;
+export THEME_BRANCH=nextcloud11;
+export THEME=<local path>
+git clone https://github.com/nextcloud/core.git --recursive --depth 1 -b $CORE_BRANCH nextcloud
+cd nextcloud
 ./occ maintenance:install --admin-user admin --admin-pass admin
-# add the theme to your config as described in the "Install" section of this README
-ocdev server
+
+#decide whether you want to use github code or your local developments:
+git clone https://github.com/EUDAT-B2DROP/b2drop-theme.git -b $THEME_BRANCH themes/b2drop
+#rsync -uvaPr --delete  --exclude “.git*” --exclude ".idea" $THEME/ themes/b2drop
+./occ config:system:set theme --value b2drop
+
+php -S localhost:8080
+
 ```
 
-You should be able to connect to [localhost:8080](http://localhost:8080) and see a working service
+You should be able to connect to [localhost:8080](http://localhost:8080) and see a working service.
