@@ -1,5 +1,9 @@
 
 /* HEADERS */
+#body-user #header, #body-settings #header, #body-public #header {
+    line-height: 2.5em;
+}
+
 #body-login {
     background: #FFFFFF; /* Old browsers */
     text-align: left;
@@ -29,6 +33,10 @@ a:hover {
     margin: 0;
 }
 
+.header-appname {
+    margin-top: -2px;
+}
+
 .header-appname #expandDisplayName{
     font-weight: 400;
 }
@@ -36,6 +44,8 @@ a:hover {
 /* Icon setting */
 #nextcloud {
     padding: 0px;
+    position: absolute;
+    top: 0;
 }
 
 /*** STRUCTURE LAYOUT ***/
@@ -233,11 +243,13 @@ a {
 
 #body-user #header, #body-settings #header {
     height: 210px;
+    display: block;
 }
 
 #body-user #header #header-top, #body-public #header #header-top {
     background: #F45D00;
     padding: 0px 20px;
+    line-height: 2.5em;
 }
 
 #body-user #controls, #body-settings #controls {
@@ -281,6 +293,7 @@ a {
     padding-left: 0px;
     left: 0;
     bottom: 0px;
+    line-height: 2.5em;
 }
 
 #header .menutoggle h1 {
@@ -290,6 +303,10 @@ a {
 
 #header-eudat {
     top: 45px;
+}
+
+#header .icon-caret {
+    margin-top: 1px;
 }
 
 .icon-caret {
@@ -310,6 +327,7 @@ div#navigation.menu, div#expanddiv.menu{
     cursor: pointer;
     float: right;
     padding-top: 125px;
+    line-height: 2.5em
 }
 
 #expand:hover, #expand:focus, #expand:active {
@@ -317,7 +335,7 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 .searchbox {
-    padding-top: 125px;
+    margin-top: -52px;
 }
 
 .searchbox input[type="search"]:valid {
@@ -329,13 +347,20 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 .searchbox input[type="search"]:focus, .searchbox input[type="search"]:active, .searchbox input[type="search"]:valid {
-    background-color: #F45D00;
+    background-color: #F45D00 !important;
+    float: right;
+    min-height: 30px;
+}
+
+.searchbox input[type="search"]:hover{
+    opacity: 1;
 }
 
 #body-user header #header #gb_menu {
     position: absolute;
     left: 350px;
     top: 80px;
+    line-height:2.5em;
 }
 
 #body-user header #header #gb_menu ul li {
@@ -418,6 +443,7 @@ div#navigation.menu, div#expanddiv.menu{
 #body-public #header #save-button, #body-public #header #download {
     background: #33549A;
     color: #FFF;
+    line-height: 0;
 }
 
 #body-public #header {
