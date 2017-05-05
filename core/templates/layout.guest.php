@@ -9,7 +9,7 @@
         <meta name="referrer" content="never">
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
-        <meta name="theme-color" content="<?php p($theme->getMailHeaderColor()); ?>">
+        <meta name="theme-color" content="<?php p($theme->getColorPrimary()); ?>">
         <link rel="icon" type="image/png" href="<?php print_unescaped(image_path('', 'favicon.png')); ?>">
         <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path('', 'favicon-touch.png')); ?>">
         <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path('', 'favicon-mask.svg')); ?>" color="#1d2d44">
