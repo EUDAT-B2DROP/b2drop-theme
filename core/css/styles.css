@@ -1,7 +1,12 @@
-
 /* HEADERS */
-#body-user #header, #body-settings #header, #body-public #header {
-    line-height: 2.5em;
+#header #header-left{
+	background-color: #F45D00;
+	height: 45px;
+}
+
+#header #header-right{
+	background-color: #F45D00;
+	height: 45px;
 }
 
 #body-login {
@@ -33,10 +38,6 @@ a:hover {
     margin: 0;
 }
 
-.header-appname {
-    margin-top: -2px;
-}
-
 .header-appname #expandDisplayName{
     font-weight: 400;
 }
@@ -46,6 +47,7 @@ a:hover {
     padding: 0px;
     position: absolute;
     top: 0;
+    margin-top: 44px;
 }
 
 /*** STRUCTURE LAYOUT ***/
@@ -167,14 +169,6 @@ a {
   margin-left: 20px;
 }
 
-.notification-delete img, .notifications-button img {
-    background-color: #F45D00;
-    height: 24px;
-    width: 24px;
-    border-radius: 3px;
-    border: 1px solid rgba(255, 255, 255, .5);
-}
-
 /*** OLD CSS STYLE ***/
 .right-not-rounded {
     border-bottom-right-radius: 0;
@@ -238,26 +232,27 @@ a {
 
 #body-user #header {
     border-bottom: 1px solid #DDD;
-    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 20% !important;
+    background: #FFFFFF url("../img/img_header.png") no-repeat 100% 38% !important;
 }
 
 #body-user #header, #body-settings #header {
-    height: 210px;
-    display: block;
+    height: 188px;
 }
 
 #body-user #header #header-top, #body-public #header #header-top {
     background: #F45D00;
     padding: 0px 20px;
-    line-height: 2.5em;
+    line-height: 3.5em;
+    height: 44px;
 }
 
 #body-user #controls, #body-settings #controls {
-    top: 210px;
+    padding-top: 144px;
 }
 
 #body-user #content-wrapper,  #body-settings #content-wrapper {
-    padding-top: 210px;
+    top: 0px;
+    padding-top: 188px;
 }
 
 #body-user #header, #body-settings #header, #body-public #header {
@@ -277,23 +272,13 @@ a {
 #body-user #header .logo-icon, #body-settings #header .logo-icon  {
     height: 128px;
     width: 232px;
-    margin-top: 40px;
+    margin-top: 8px;
     margin-left: 25px;
 }
 
 #body-user #owncloud, #body-settings #owncloud {
     top: 35px;
     left: 20px;
-}
-
-#header .menutoggle {
-    padding-top: 125px;
-    margin-left: 0px;
-    margin-top: 9px;
-    padding-left: 0px;
-    left: 0;
-    bottom: 0px;
-    line-height: 2.5em;
 }
 
 #header .menutoggle h1 {
@@ -313,12 +298,7 @@ a {
     background-image: url('/core/img/actions/caret-dark.svg');
 }
 
-#navigation {
-    top: 210px;
-}
-
 div#navigation.menu, div#expanddiv.menu{
-    top: 210px;
     background-color: #F45D00;
 }
 
@@ -326,16 +306,12 @@ div#navigation.menu, div#expanddiv.menu{
     color: #F45D00;
     cursor: pointer;
     float: right;
-    padding-top: 125px;
-    line-height: 2.5em
+    line-height: 2.5em;
+    margin-top: 0px;
 }
 
 #expand:hover, #expand:focus, #expand:active {
     color: #E5601E !important;
-}
-
-.searchbox {
-    margin-top: -52px;
 }
 
 .searchbox input[type="search"]:valid {
@@ -408,6 +384,7 @@ div#navigation.menu, div#expanddiv.menu{
 #body-settings #header #header-top {
     background: #F45D00;
     padding: 0px 20px;
+    height: 44px;
 }
 
 #body-settings header #header #gb_menu {
@@ -447,7 +424,25 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 #body-public #header {
-    background: #F45D00;
+	height: 100px;
+}
+
+#body-public #header-left {
+	background: #F45D00;
+	height: 45px;
+}
+
+#body-public #header-right {
+	background: #F45D00;
+	height: 45px;
+}
+
+#body-public #controls {
+	top: 100px;
+}
+
+#body-public #content-wrapper {
+	padding-top: 100px;
 }
 
 #body-public .header-appname-container {
@@ -485,7 +480,11 @@ div#navigation.menu, div#expanddiv.menu{
 }
 
 #app-sidebar{
-    top: 210px;
+    padding-top: 188px;
+}
+
+#app-sidebar .close{
+	top: 144px;
 }
 
 #body-user table.multiselect thead {
