@@ -1,7 +1,7 @@
 language: php
-dist: precise
+dist: trusty
 php:
-  - 7.0
+  - 7.0.21
 
 install:
   - pear install pear/PHP_CodeSniffer
