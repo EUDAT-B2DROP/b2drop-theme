@@ -385,6 +385,7 @@ div#navigation.menu, div#expanddiv.menu{
     background: #F45D00;
     padding: 0px 20px;
     height: 44px;
+	line-height: 3.5em;
 }
 
 #body-settings header #header #gb_menu {
