@@ -113,11 +113,12 @@
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-5">
                         EUDAT receives funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No. 654065.
-                        <a href="#">Legal Notice</a>.
+                        <a target="_blank" href="https://eudat.eu/legal-notice">Legal Notice</a>.
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 text-right">
                         <nav class="navbar navbar-footer">
                             <ul id="menu" class="nav navbar-nav navbar-right pull-right">
+								<li><a target="_blank" href="http://hdl.handle.net/11304/e43b2e3f-83c5-4e3f-b8b7-18d38d37a6cd">EUDAT Service ToU</a></li>
                                 <li><a href="/themes/b2drop/terms-of-use.html">Terms of Use</a></li>
                                 <li><a target="_blank" href="https://eudat.eu/what-eudat">About EUDAT</a></li>
                             </ul>
