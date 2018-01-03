@@ -10,7 +10,7 @@
 }
 
 #body-login {
-    background: #FFFFFF; /* Old browsers */
+    background: #FFFFFF !important; /* Old browsers */
     text-align: left;
 }
 
@@ -260,7 +260,7 @@ a {
 }
 
 #header .logo-icon {
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo.png") !important;
 }
 
 #body-public #header .logo-icon{
