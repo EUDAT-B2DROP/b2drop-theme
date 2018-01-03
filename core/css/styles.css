@@ -1,3 +1,9 @@
+/* hide remember login */
+.remember-login-container {
+        display: none;
+}
+
+
 /* HEADERS */
 #header #header-left{
 	background-color: #F45D00;
