@@ -100,7 +100,8 @@
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 description-home">
                         <?php print_unescaped($_['content']); ?>
-                        <p id="register_link">Not registered yet? <a href="/pwm/public/NewUser">CLICK HERE</a></p>
+                        <!-- Obsolete link  to LDAP user registration -->
+                        <!--p id="register_link">Not registered yet? <a href="/pwm/public/NewUser">CLICK HERE</a></p-->
                     </div>
                 </div>
             </div>
