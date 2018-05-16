@@ -1,3 +1,13 @@
+/*user_saml*/
+#saml-select-user-back-end{
+        color: #000000;
+}
+
+.login-option{
+        background-color: #F45D00;
+        text-align: center;
+}
+
 /* HEADERS */
 #header #header-left{
 	background-color: #F45D00;
