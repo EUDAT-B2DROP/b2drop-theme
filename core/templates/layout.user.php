@@ -32,7 +32,7 @@
         <?php foreach($_['jsfiles'] as $jsfile): ?>
             <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
         <?php endforeach; ?>
-		<link rel="stylesheet" href="/themes/b2drop/core/css/styles.css">
+		<link rel="stylesheet" href="/themes/b2drop/core/css/server.css">
         <?php print_unescaped($_['headers']); ?>
     </head>
     <body id="<?php p($_['bodyid']);?>">

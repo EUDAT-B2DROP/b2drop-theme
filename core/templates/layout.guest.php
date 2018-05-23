@@ -18,7 +18,7 @@
 	<?php endforeach; ?>
 	<link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/themes/b2drop/core/css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/themes/b2drop/core/css/styles.css">
+	<link rel="stylesheet" href="/themes/b2drop/core/css/server.css">
 	<?php foreach($_['printcssfiles'] as $cssfile): ?>
 		<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="print">
 	<?php endforeach; ?>
@@ -32,7 +32,7 @@
 	<?php endforeach; ?>
 	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>
 	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="/themes/b2drop/core/css/styles.css">
+	<link rel="stylesheet" href="/themes/b2drop/core/css/server.css">
 	<?php print_unescaped($_['headers']); ?>
     </head>
     <body id="<?php p($_['bodyid']);?>">

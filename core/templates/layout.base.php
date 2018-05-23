@@ -27,7 +27,7 @@
                         <script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
                 <?php endforeach; ?>
                 <?php print_unescaped($_['headers']); ?>
-		<link rel="stylesheet" href="/themes/b2drop/core/css/styles.css">
+		<link rel="stylesheet" href="/themes/b2drop/core/css/server.css">
         </head>
         <body id="body-public">
                 <?php include('layout.noscript.warning.php'); ?>
