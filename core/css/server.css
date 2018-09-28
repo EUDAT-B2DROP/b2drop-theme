@@ -497,3 +497,7 @@ div#navigation.menu, div#expanddiv.menu{
     top: 220px;
     padding-top: 33px;
 }
+
+#body-public #controls{
+    position: fixed;
+}
