@@ -58,7 +58,7 @@ a:hover {
     padding: 0px;
     position: absolute;
     top: 0;
-    margin-top: 44px;
+    margin-top: 22px;
 }
 
 /*** STRUCTURE LAYOUT ***/
@@ -277,7 +277,6 @@ a {
 #body-user #header .logo-icon, #body-settings #header .logo-icon  {
     height: 128px;
     width: 232px;
-    margin-top: 8px;
     margin-left: 25px;
 }
 
