@@ -484,14 +484,6 @@ div#navigation.menu, div#expanddiv.menu{
     }
 }
 
-#app-sidebar{
-    padding-top: 188px;
-}
-
-#app-sidebar .close{
-	top: 144px;
-}
-
 #body-user table.multiselect thead {
     top: 220px;
     padding-top: 33px;
