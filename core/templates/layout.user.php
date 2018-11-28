@@ -111,7 +111,7 @@
 							<?php p($l->t('Search'));?>
 						</label>
 						<input id="searchbox" type="search" name="query"
-							value="" required
+							value="" required class="hidden icon-search-white"
 							autocomplete="off" tabindex="5">
 					</form>
 					<div id="settings" class="svg">
