@@ -106,14 +106,15 @@
 					</nav>
 				</div>
 				<div id="header-right">
-					<form class="searchbox" action="#" method="post" role="search" novalidate>
-						<label for="searchbox" class="hidden-visually">
-							<?php p($l->t('Search'));?>
-						</label>
-						<input id="searchbox" type="search" name="query"
-							value="" required class="hidden icon-search-white"
-							autocomplete="off" tabindex="5">
-					</form>
+                    <form class="searchbox" action="#" method="post" role="search" novalidate>
+                        <label for="searchbox" class="hidden-visually">
+                            <?php p($l->t('Search'));?>
+                        </label>
+                        <input id="searchbox" type="search" name="query"
+                            value="" required class="hidden icon-search-white"
+                            autocomplete="off">
+                        <button class="icon-close-white" type="reset"><span class="hidden-visually"><?php p($l->t('Reset search'));?></span></button>
+                    </form>
 					<div id="settings" class="svg">
 						<div id="expand" tabindex="6" role="link">
 							<div class="avatardiv<?php if ($_['userAvatarSet']) { print_unescaped(' avatardiv-shown'); } else { print_unescaped('" style="display: none'); } ?>">
