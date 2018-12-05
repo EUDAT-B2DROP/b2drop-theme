@@ -235,6 +235,10 @@ a {
 
 /****** LAYOUT USER *****/
 
+#app-navigation {
+	top: 188px;
+}
+
 #notification, #update-notification {
     display: none !important;
 }
