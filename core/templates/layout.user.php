@@ -114,31 +114,35 @@
 							value="" required class="hidden icon-search-white"
 							autocomplete="off" tabindex="5">
 					</form>
-					<div id="settings" class="svg">
-						<div id="expand" tabindex="6" role="link">
-							<div class="avatardiv<?php if ($_['userAvatarSet']) { print_unescaped(' avatardiv-shown'); } else { print_unescaped('" style="display: none'); } ?>">
-								<?php if ($_['userAvatarSet']): ?>
-									<img alt="" width="32" height="32"
-									src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32]));?>"
-									srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128]));?> 4x">
-								<?php endif; ?>
-							</div>
-							<div id="expandDisplayName" class="icon-settings-white"></div>
-						</div>
-						<div id="expanddiv">
-							<ul>
-								<?php foreach($_['settingsnavigation'] as $entry):?>
-								<li>
-									<a href="<?php print_unescaped($entry['href']); ?>"
-										<?php if( $entry["active"] ): ?> class="active"<?php endif; ?>>
-										<img class="svg" alt="" src="<?php print_unescaped($entry['icon']); ?>">
-										<?php p($entry['name']) ?>
-									</a>
-								</li>
-								<?php endforeach; ?>
-							</ul>
-						</div>
-					</div>
+                    <div id="settings">
+                        <div id="expand" tabindex="0" role="button" class="menutoggle"
+                            aria-label="<?php p($l->t('Settings'));?>"
+                            aria-haspopup="true" aria-controls="expanddiv" aria-expanded="false">
+                            <div class="avatardiv<?php if ($_['userAvatarSet']) { print_unescaped(' avatardiv-shown'); } else { print_unescaped('" style="display: none'); } ?>">
+                                <?php if ($_['userAvatarSet']): ?>
+                                <img alt="" width="32" height="32"
+                                    src="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 32, 'v' => $_['userAvatarVersion']]));?>"
+                                    srcset="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 64, 'v' => $_['userAvatarVersion']]));?> 2x, <?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.getAvatar', ['userId' => $_['user_uid'], 'size' => 128, 'v' => $_['userAvatarVersion']]));?> 4x"
+                                    >
+                                    <?php endif; ?>
+                            </div>
+                            <div id="expandDisplayName" class="icon-settings-white"></div>
+                        </div>
+                        <nav id="expanddiv" style="display:none;"
+                            aria-label="<?php p($l->t('Settings menu'));?>">
+                            <ul>
+                                <?php foreach($_['settingsnavigation'] as $entry):?>
+                                <li data-id="<?php p($entry['id']); ?>">
+                                    <a href="<?php print_unescaped($entry['href']); ?>"
+                                        <?php if( $entry["active"] ): ?> class="active"<?php endif; ?>>
+                                        <img alt="" src="<?php print_unescaped($entry['icon'] . '?v=' . $_['versionHash']); ?>">
+                                            <?php p($entry['name']) ?>
+                                    </a>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </nav>
+                    </div>                    			
 					<div id="gb_menu">
 						<ul>
 							<li><a target="_blank" href="https://eudat.eu/services/b2drop">WHAT IS B2DROP</a></li>
