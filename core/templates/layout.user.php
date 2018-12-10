@@ -36,6 +36,10 @@
         <?php print_unescaped($_['headers']); ?>
     </head>
     <body id="<?php p($_['bodyid']);?>">
+
+        <a href="#app-content" class="button primary skip-navigation skip-content"><?php p($l->t('Skip to main content')); ?></a>
+        <a href="#app-navigation" class="button primary skip-navigation"><?php p($l->t('Skip to navigation of app')); ?></a>
+
 		<div id="notification-container">
 			<div id="notification"></div>
 		</div>
