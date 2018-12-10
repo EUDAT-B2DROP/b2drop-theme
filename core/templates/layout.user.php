@@ -158,6 +158,17 @@
 				</div>
 			</div>
 		</header>
+		
+		<div id="sudo-login-background" class="hidden"></div>
+        <form id="sudo-login-form" class="hidden">
+            <label>
+                <?php p($l->t('This action requires you to confirm your password')); ?><br/>
+                <input type="password" class="question" autocomplete="new-password" name="question" value=" <?php /* Hack against browsers ignoring autocomplete="off" */ ?>"
+                    placeholder="<?php p($l->t('Confirm your password')); ?>" />
+            </label>
+            <input class="confirm" value="<?php p($l->t('Confirm')); ?>" type="submit">
+        </form>
+		
 		<div id="content-wrapper">
 			<div id="content" class="app-<?php p($_['appid']) ?>" role="main">
 				<?php print_unescaped($_['content']); ?>
