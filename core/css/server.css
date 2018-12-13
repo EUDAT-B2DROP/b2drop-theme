@@ -306,16 +306,20 @@ a {
     background-image: url('/core/img/actions/caret-dark.svg');
 }
 
-div#navigation.menu, div#expanddiv.menu{
-    background-color: #F45D00;
-}
-
 #settings {
     color: #F45D00;
     cursor: pointer;
     float: right;
     line-height: 2.5em;
     margin-top: 0px;
+}
+
+#expanddiv{
+    top: 45px;
+    right: 13px;
+    position: absolute;
+    filter: drop-shadow(0 1px 10px rgba(77,77,77,0.75));
+    background-color: #F45D00;
 }
 
 #expand:hover, #expand:focus, #expand:active {
