@@ -314,16 +314,16 @@ a {
     margin-top: 0px;
 }
 
+#expand{
+    padding 7px 20px 6px 10px;
+}
+
 #expanddiv{
     top: 45px;
     right: 13px;
     position: absolute;
     filter: drop-shadow(0 1px 10px rgba(77,77,77,0.75));
     background-color: #F45D00;
-}
-
-#expand:hover, #expand:focus, #expand:active {
-    color: #E5601E !important;
 }
 
 .searchbox input[type="search"]:valid {
