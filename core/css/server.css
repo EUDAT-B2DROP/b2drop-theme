@@ -424,6 +424,11 @@ a {
     font-size: 16px;
 }
 
+#body-settings #settings #expand::before{
+    top: 25px;
+    right: 18px;
+}
+
 /***** SHARE SCREEN  SETTINGS ****/
 
 #body-public #owncloud {
