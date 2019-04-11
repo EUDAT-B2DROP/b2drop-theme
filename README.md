@@ -23,7 +23,14 @@ We expect to run **B2DROP** directly at the document root of your webserver, for
 ```
 git clone https://github.com/EUDAT-B2DROP/b2drop-theme.git b2drop
 ```
-3. enable the theme via creating <Nextcloud>/config/b2drop.config.php and adding
+3. do basic theming with Nextcloud's theeming app, all needed images are in the theme.
+```
+Color: #F45D00
+Logo: logo.png
+Header logo: logo-wide.png
+Favicon: favicon.svg
+```
+4. enable the theme via creating <Nextcloud>/config/b2drop.config.php and adding
 ```
 <?php
 $CONFIG = array (
@@ -67,4 +74,4 @@ php -S localhost:8080
 
 ```
 
-You should be able to connect to [localhost:8080](http://localhost:8080) and see a working service.
+You should be able to connect to [localhost:8080](http://localhost:8080) and see a working service. 
