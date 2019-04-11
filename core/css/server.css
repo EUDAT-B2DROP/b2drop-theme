@@ -100,7 +100,7 @@ body > #page {
 
 .navbar-footer ul li a {
     background-color: transparent !important;
-    color: #666;
+    color: #666 !important;
 }
 
 .navbar-footer ul li a:hover {
