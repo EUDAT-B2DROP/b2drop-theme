@@ -4,7 +4,7 @@ img{width:100%}
 .page-wrap .primary-header{background:#264899;padding:0 8.3333vw}
 .page-wrap .primary-header .section-link a{font-size:14px;text-align:left;color:#ffffff;text-transform:uppercase;border-left:1px solid #577CD5;border-right:1px solid #577CD5;padding:10px;float:left;font-weight:600}
 .page-wrap .primary-header .section-link a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
-.page-wrap .header{background:url("./core/img/pattern.svg") no-repeat;margin:0;background-position:100% 0;box-shadow:-7px 4px 18px -2px rgba(0,0,0,0.1);background-size:290px !important;padding:0 8.3333vw}
+.page-wrap .header{background:url("../img/pattern.svg") no-repeat;margin:0;background-position:100% 0;box-shadow:-7px 4px 18px -2px rgba(0,0,0,0.1);background-size:290px !important;padding:0 8.3333vw}
 .page-wrap .header #menu{line-height:110px}
 .page-wrap .header #menu ul{padding:0;text-align:center}
 .page-wrap .header #menu ul li{display:inline-block}
