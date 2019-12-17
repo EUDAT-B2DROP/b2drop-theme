@@ -12,7 +12,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
 body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
-img{width:100%}
 .page-wrap .primary-header{background:#264899;padding:0 8.3333vw}
 .page-wrap .primary-header .section-link a{font-size:14px;text-align:left;color:#ffffff;text-transform:uppercase;border-left:1px solid #577CD5;border-right:1px solid #577CD5;padding:10px;float:left;font-weight:600}
 .page-wrap .primary-header .section-link a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
