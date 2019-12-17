@@ -11,13 +11,13 @@ img{width:100%}
 .page-wrap .header #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:16px;text-align:left;font-weight:500;color:#555;text-transform:uppercase;margin-right:10px}
 .page-wrap .header #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 .page-wrap .footer{background-color:#2C2C2C;margin:0;padding:1vw 8.3333vw}
-.page-wrap .footer .logo p{color:#fff;font-size:14px;font-weight:100}
+.page-wrap .footer .logo p{color:#fff;font-size:12px;font-weight:400}
 .page-wrap .footer #menu{line-height:110px}
 .page-wrap .footer #menu ul{padding:0;text-align:right}
 .page-wrap .footer #menu ul li{display:inline-block}
-.page-wrap .footer #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:14px;text-align:left;font-weight:300;color:#fff;text-transform:uppercase;margin-right:10px}
+.page-wrap .footer #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:12px;text-align:left;font-weight:400;color:#fff;text-transform:uppercase;margin-right:10px}
 .page-wrap .footer #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 .page-wrap .secondary-footer{background-color:#2C2C2C}
-.page-wrap .secondary-footer p{text-align:center;color:#fff;padding:1vw;font-size:14px;font-weight:100}
+.page-wrap .secondary-footer p{text-align:center;color:#fff;padding:1vw;font-size:12px;font-weight:400}
 a{-webkit-transition:ease-out 0.4s;-moz-transition:ease-out 0.4s;-o-transition:ease-out 0.4s;transition:ease-out 0.4s}
 a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
