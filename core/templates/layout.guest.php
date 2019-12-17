@@ -18,7 +18,7 @@
 	<?php endforeach; ?>
 	<link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap-grid.min.css" type="text/css"/>
     <link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="/themes/b2drop/core/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="/themes/b2drop/core/css/server.css" type="text/css"/>
 	<?php foreach($_['printcssfiles'] as $cssfile): ?>
 		<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="print">
 	<?php endforeach; ?>
@@ -32,7 +32,6 @@
 	<?php endforeach; ?>
 	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>
 	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="/themes/b2drop/core/css/styles.css">
 	<?php print_unescaped($_['headers']); ?>
     </head>
     <body id="<?php p($_['bodyid']);?>">
@@ -56,7 +55,7 @@
 					<div class="row">
 						<div class="col-md-2 align-self-center">
 							<div class="logo">
-								<img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="100%">
+								<img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="232px">
 						</div>               
 						</div>
 						<div class="col-md-8">
