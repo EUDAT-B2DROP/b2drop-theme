@@ -25,9 +25,9 @@ git clone https://github.com/EUDAT-B2DROP/b2drop-theme.git b2drop
 ```
 3. do basic theming with Nextcloud's theeming app, all needed images are in the theme.
 ```
-Color: #F45D00
+Color: #264899
 Logo: logo.png
-Header logo: logo-wide.png
+Header logo: logo_w_border.png
 Favicon: favicon.svg
 ```
 4. enable the theme via creating <Nextcloud>/config/b2drop.config.php and adding
