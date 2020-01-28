@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" >
-    <head data-requesttoken="<?php p($_['requesttoken']); ?>">
-        <meta charset="utf-8">
-        <title>
-        <?php p($theme->getTitle()); ?>
-        </title>
+<html class="ng-csp" data-placeholder-focus="false" lang="<?php p($_['language']); ?>" data-locale="<?php p($_['locale']); ?>" >
+	<head
+<?php if ($_['user_uid']) { ?>
+	data-user="<?php p($_['user_uid']); ?>" data-user-displayname="<?php p($_['user_displayname']); ?>"
+<?php } ?>
+ data-requesttoken="<?php p($_['requesttoken']); ?>">
+		<meta charset="utf-8">
+		<title>
+		<?php p($theme->getTitle()); ?>
+		</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="referrer" content="never">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-        <meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
-        <meta name="theme-color" content="<?php p($theme->getColorPrimary()); ?>">
-        <link rel="icon" type="image/png" href="<?php print_unescaped(image_path('', 'favicon.png')); ?>">
-        <link rel="apple-touch-icon-precomposed" href="<?php print_unescaped(image_path('', 'favicon-touch.png')); ?>">
-        <link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path('', 'favicon-mask.svg')); ?>" color="#1d2d44">
-	<?php foreach($_['cssfiles'] as $cssfile): ?>
-		<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>">
-	<?php endforeach; ?>
-	<link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap-grid.min.css" type="text/css"/>
-    <link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap.min.css" type="text/css"/>
-    <link rel="stylesheet" href="/themes/b2drop/core/css/server.css" type="text/css"/>
-	<?php foreach($_['printcssfiles'] as $cssfile): ?>
-		<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="print">
-	<?php endforeach; ?>
-	<?php if (isset($_['inline_ocjs'])): ?>
-		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" type="text/javascript">
-			<?php print_unescaped($_['inline_ocjs']); ?>
-		</script>
-	<?php endif; ?>
-	<?php foreach($_['jsfiles'] as $jsfile): ?>
-		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
-	<?php endforeach; ?>
-	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>
-	<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/bootstrap.min.js"></script>
-	<?php print_unescaped($_['headers']); ?>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<?php if ($theme->getiTunesAppId() !== '') { ?>
+		<meta name="apple-itunes-app" content="app-id=<?php p($theme->getiTunesAppId()); ?>">
+		<?php } ?>
+		<meta name="theme-color" content="<?php p($theme->getColorPrimary()); ?>">
+		<link rel="icon" href="<?php print_unescaped(image_path('', 'favicon.ico')); /* IE11+ supports png */ ?>">
+		<link rel="apple-touch-icon" href="<?php print_unescaped(image_path('', 'favicon-touch.png')); ?>">
+		<link rel="mask-icon" sizes="any" href="<?php print_unescaped(image_path('', 'favicon-mask.svg')); ?>" color="<?php p($theme->getColorPrimary()); ?>">
+		<link rel="manifest" href="<?php print_unescaped(image_path('', 'manifest.json')); ?>">
+		<?php emit_css_loading_tags($_); ?>
+		<?php emit_script_loading_tags($_); ?>
+		<link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap-grid.min.css" type="text/css"/>
+		<link rel="stylesheet" href="/themes/b2drop/core/css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="/themes/b2drop/core/css/server.css" type="text/css"/>
+		<?php foreach($_['printcssfiles'] as $cssfile): ?>
+			<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="print">
+		<?php endforeach; ?>
+		<?php if (isset($_['inline_ocjs'])): ?>
+			<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" type="text/javascript">
+				<?php print_unescaped($_['inline_ocjs']); ?>
+			</script>
+		<?php endif; ?>
+		<?php foreach($_['jsfiles'] as $jsfile): ?>
+			<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
+		<?php endforeach; ?>
+		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>
+		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/bootstrap.min.js"></script>
+		<?php print_unescaped($_['headers']); ?>
     </head>
     <body id="<?php p($_['bodyid']);?>">
         <?php if ($_['bodyid'] === 'body-login' ): ?>
