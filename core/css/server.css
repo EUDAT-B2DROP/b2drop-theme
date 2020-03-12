@@ -9,6 +9,8 @@
 }
 
 /***HEADER AND FOOTER***/
+.Row {
+display table;}
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
 body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
@@ -29,7 +31,7 @@ body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
 .page-wrap .footer #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:12px;text-align:left;font-weight:400;color:#fff;margin-right:10px}
 .page-wrap .footer #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 .page-wrap .secondary-footer{background-color:#2C2C2C}
-.page-wrap .secondary-footer p{text-align:center;color:#fff;font-size:12px;font-weight:400;padding:0px 0px 20px 0px;margin-bottom:0px}
+.page-wrap .secondary-footer p{text-align:right;color:#fff;font-size:12px;font-weight:400;padding:0px 0px 20px 0px;margin-bottom:0px}
 a{-webkit-transition:ease-out 0.4s;-moz-transition:ease-out 0.4s;-o-transition:ease-out 0.4s;transition:ease-out 0.4s}
 a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 
@@ -69,7 +71,8 @@ body > #page {
     font-weight: 500;
     font-size: 16px;
 }
-
+:3
+2
 .navbar-default .navbar-nav > li > a:hover {
     color: #E5601E !important;
     font-weight: 500;
