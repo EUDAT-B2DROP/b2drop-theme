@@ -129,10 +129,10 @@
                     <div class="line" style="margin-bottom:15px;width:100%;border-bottom: 1px solid #888;"></div>
                     <div style="display: table; width: 100%;">
                         <div style="display: table-cell; width:60px;">
-                            <img src="core/img/euflag.png" height="40px;">
+                            <img src="/themes/b2drop/core/img/euflag.png" height="40px;">
                         </div>
                         <div style="display: table-cell; padding-left:15px; width:135px">
-                            <img src="core/img/EOSC-hub-extended-grey.png" height="40px;">
+                            <img src="/themes/b2drop/core/img/EOSC-hub-extended-grey.png" height="40px;">
                         </div>
                         <div style="display: table-cell; padding-top:10px; color:#fff;font-size:12px;font-weight:400;">B2DROP is co-funded by the EOSC-hub project (Horizon 2020) under Grant number 777536</div>
                         <div class="container-fluid">
