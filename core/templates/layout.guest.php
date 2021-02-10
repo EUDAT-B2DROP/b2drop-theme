@@ -74,7 +74,7 @@
 									<li><a href="/themes/b2drop/faq.html">FAQS</a></li>
 									<li><a target="_blank" href="https://eudat.eu/services/b2drop">What is B2DROP</a></li>
 									<li><a target="_blank" href="https://eudat.eu/services/userdoc/b2drop">USER GUIDE</a></li>
-									<li><a target="_blank" href="https://eudat.eu/support-request?service=B2DROP">CONTACT</a></li>
+									<li><a target="_blank" href="mailto:servicedesk@csc.fi?subject=CSC Eudat B2DROP">CONTACT</a></li>
 								</ul>
 							</div>
 						</div>
