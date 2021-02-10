@@ -58,12 +58,17 @@
 			<div class="header">
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-md-2 align-self-center">
+						<div class="col-md-2 align-self-center" style="max-width: 199px">
 							<div class="logo">
-								<img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="199px">
+								<img src="/themes/b2drop/core/img/csc.png" alt="CSC+logo" width="199px">
+							</div>
 						</div>
+						<div class="col-md-2 align-self-center" >
+						<img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="199px">
+							<div class="logo">
+							</div>
 						</div>
-						<div class="col-md-8">
+						<div class="col-md-8" style="flex: 0 0 50%; max-width: 50%">
 							<div id="menu">
 								<ul>
 									<li><a href="/themes/b2drop/faq.html">FAQS</a></li>
