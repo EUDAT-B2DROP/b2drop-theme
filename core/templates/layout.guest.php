@@ -121,7 +121,7 @@
 						<div class="col-md-8">
 							<div id="menu">
 								<ul>
-									<li><a target="_blank" href="acceptable-use-policy.html">Acceptable Use Policy</a></li>
+									<li><a target="_blank" href="/themes/b2drop/acceptable-use-policy.html">Acceptable Use Policy</a></li>
 									<li><a href="/themes/b2drop/data-privacy-statement.html">Data Privacy Statement</a></li>
 									<li><a target="_blank" href="https://eudat.eu/">About EUDAT</a></li>
 								</ul>
