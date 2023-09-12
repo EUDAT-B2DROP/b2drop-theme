@@ -24,7 +24,7 @@ body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
 .page-wrap .header #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:16px;text-align:left;font-weight:500;color:#555;text-transform:uppercase;margin-right:10px}
 .page-wrap .header #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 .page-wrap .header{background-color:#FFFFFF}
-.page-wrap .footer{background-color:#2C2C2C;margin:0;padding:0px}
+.page-wrap .footer{background-color:#2C2C2C;margin:0;padding:0px;bottom:0px;position:absolute;width:100%;left:0;height:200px}
 .page-wrap .footer .logo p{color:#fff;font-size:12px;font-weight:400}
 .page-wrap .footer #menu{line-height:110px}
 .page-wrap .footer #menu ul{padding:0;text-align:right}
@@ -52,15 +52,13 @@ html, body {
 }
 
 body > #page {
-    height: 800px;
-    min-height: 55%;
-    max-height: calc(100% - 300px);
+    min-height: max(calc(100% - 200px), 400px);
+    padding-bottom: 200px;
     background: url("../img/bg_page.png") left center;
     background-repeat: no-repeat;
-    background-size: contain
-    background-origin: border-box
+    background-size: contain;
+    background-origin: border-box;
     background-color: #FAFAFA;
-
     position: relative;
 }
 
