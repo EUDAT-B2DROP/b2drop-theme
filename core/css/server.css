@@ -62,6 +62,12 @@ body > #page {
     position: relative;
 }
 
+#b2access-login {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 /**** NAVBAR ***/
 .navbar-default {
     border: 0 !important;

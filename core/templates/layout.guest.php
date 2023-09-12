@@ -81,7 +81,7 @@
 		</div>
 
         <div id="page">
-            <div class="container">
+            <div class="container" id="b2access-login">
                 <div class="col-xs-12 col-sm-6 col-md-6 description-home">
                     <?php print_unescaped($_['content']); ?>
                 </div>
