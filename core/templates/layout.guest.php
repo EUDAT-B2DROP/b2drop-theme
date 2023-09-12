@@ -82,24 +82,10 @@
 
         <div id="page">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-md-5">
-                        <!-- BEGIN CONTENT LEFT -->
-                        <div class="description-home hidden">
-                            <h1>B2DROP</h1>
-
-                            <p>B2DROP is a secure and trusted data exchange service for researchers and scientists to keep their
-                                research data synchronized and up-to-date and to exchange with other researchers.</p>
-                            <a class="btn btn-default" href="https://eudat.eu/services/b2drop">Read more</a>
-                        </div>
-                        <!-- END CONTENT LEFT -->
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 description-home">
-                        <?php print_unescaped($_['content']); ?>
-                    </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 description-home">
+                    <?php print_unescaped($_['content']); ?>
                 </div>
             </div>
-
         </div>
         <?php endif; ?>
         <div class="page-wrap">
