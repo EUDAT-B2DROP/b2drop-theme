@@ -48,6 +48,7 @@ html, body {
     color: #333;
     font-family: Arial, Verdana, sans-serif;
     margin: 0;
+    background-color: #FAFAFA !import
 }
 
 body > #page {
@@ -57,12 +58,10 @@ body > #page {
     background: url("../img/bg_page.png") no-repeat left center;
     background-size: contain;
     position: relative;
-    background-color: #FAFAFA !important;
 }
 
 /**** NAVBAR ***/
 .navbar-default {
-    background-color: #FAFAFA !important;
     border: 0 !important;
     margin-top: 30px;
 }
