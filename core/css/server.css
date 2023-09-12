@@ -57,6 +57,7 @@ body > #page {
     background: url("../img/bg_page.png") no-repeat left center;
     background-size: contain;
     position: relative;
+    background-color: #FAFAFA !important;
 }
 
 /**** NAVBAR ***/
