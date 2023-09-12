@@ -62,7 +62,7 @@ body > #page {
 
 /**** NAVBAR ***/
 .navbar-default {
-    background-color: transparent !important;
+    background-color: #FAFAFA !important;
     border: 0 !important;
     margin-top: 30px;
 }
