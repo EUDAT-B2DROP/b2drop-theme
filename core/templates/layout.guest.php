@@ -35,7 +35,7 @@
 		<?php foreach($_['jsfiles'] as $jsfile): ?>
 			<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="<?php print_unescaped($jsfile); ?>"></script>
 		<?php endforeach; ?>
-		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>
+		/*<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/theme-fixes.js"></script>*/
 		<script nonce="<?php p(\OC::$server->getContentSecurityPolicyNonceManager()->getNonce()) ?>" src="/themes/b2drop/core/js/bootstrap.min.js"></script>
 		<?php print_unescaped($_['headers']); ?>
     </head>
