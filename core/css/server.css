@@ -121,8 +121,16 @@ body > #page {
   margin-left: 20px;
 }
 
-/**** FAQ ***/
-#faq-container {
+/**** FAQ and data privacy ***/
+#faq-container, #dps-container{
     min-height: 100%;
     padding-bottom: 200px;
+}
+
+#body-dps {
+    position: inherit;
+}
+
+table {
+    white-space: inherit;
 }
