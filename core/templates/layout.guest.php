@@ -104,7 +104,7 @@
 								<ul>
                                     <li><a target="_blank" href="https://www.eudat.eu/eudat-cdi-aup">EUDAT Terms of Use</a></li>
                                     <li><a href="/themes/b2drop/data-privacy-statement.html">Data Privacy Statement</a></li>
-									<li><a target="_blank" href="https://eudat.eu/">About EUDAT</a></li>
+									<li><a target="_blank" href="https://eudat.eu/eudat-cdi">About EUDAT</a></li>
 								</ul>
 							</div>
 						</div>
