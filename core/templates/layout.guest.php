@@ -47,7 +47,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="section-link">
-								<a href="/">Go to EUDAT website</a>
+								<a href="https://eudat.eu">Go to EUDAT website</a>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -60,8 +60,8 @@
 					<div class="row">
 						<div class="col-md-2 align-self-center">
 							<div class="logo">
-								<img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="199px">
-						</div>
+								<a href="/"><img src="/themes/b2drop/core/img/logo.png" alt="Placeholder+logo" width="199px"></a>
+						    </div>
 						</div>
 						<div class="col-md-8">
 							<div id="menu">
