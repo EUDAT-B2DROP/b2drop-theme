@@ -24,7 +24,7 @@ body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
 .page-wrap .header #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:16px;text-align:left;font-weight:500;color:#555;text-transform:uppercase;margin-right:10px}
 .page-wrap .header #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
 .page-wrap .header{background-color:#FFFFFF}
-.page-wrap .footer{background-color:#2C2C2C;margin:0;padding:0px;bottom:0px;position:absolute;width:100%;left:0;height:200px}
+.page-wrap .footer{background-color:#2C2C2C;margin:0;padding:0px;bottom:0px;position:fixed;width:100%;left:0;height:200px}
 .page-wrap .footer .logo p{color:#fff;font-size:12px;font-weight:400}
 .page-wrap .footer #menu{line-height:110px}
 .page-wrap .footer #menu ul{padding:0;text-align:right}
@@ -119,4 +119,10 @@ body > #page {
 
 #body-login .navbar-default {
   margin-left: 20px;
+}
+
+/**** FAQ ***/
+#faq-container {
+    min-height: 100%;
+    padding-bottom: 200px;
 }
