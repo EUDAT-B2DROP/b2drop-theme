@@ -193,6 +193,7 @@ Date: 14.06.2018
                 <div class="col-md-8">
                     <div id="menu">
                         <ul>
+                            <li><a href="https://b2drop.eudat.eu/themes/b2drop/imprint.html">Imprint</a></li>
                             <li><a target="_blank" href="https://www.eudat.eu/eudat-cdi-aup">EUDAT Terms of Use</a></li>
                             <li><a href="data-privacy-statement.php">Data Privacy Statement</a></li>
                             <li><a target="_blank" href="https://eudat.eu/eudat-cdi">About EUDAT</a></li>

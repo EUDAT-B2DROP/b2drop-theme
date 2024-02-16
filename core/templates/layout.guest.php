@@ -100,7 +100,8 @@
 						<div class="col-md-2"></div>
 						<div class="col-md-8">
 							<div id="menu">
-								<ul>
+                                <ul>
+                                    <li><a href="https://b2drop.eudat.eu/themes/b2drop/imprint.html">Imprint</a></li>
                                     <li><a target="_blank" href="https://www.eudat.eu/eudat-cdi-aup">EUDAT Terms of Use</a></li>
                                     <li><a href="/themes/b2drop/data-privacy-statement.html">Data Privacy Statement</a></li>
 									<li><a target="_blank" href="https://eudat.eu/eudat-cdi">About EUDAT</a></li>
