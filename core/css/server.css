@@ -1,57 +1,178 @@
 /*user_saml*/
-#saml-select-user-back-end{
-        color: #000000;
+#saml-select-user-back-end {
+    color: #000000;
 }
 
-.login-option{
-        background-color: #264899;
-        text-align: center;
+.login-option {
+    background-color: #264899;
+    text-align: center;
 }
 
 /***HEADER AND FOOTER***/
 .Row {
-display table;}
+    display table;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
-body{margin:0px;padding:0px;font-family:'Ubuntu', sans-serif}
-.page-wrap .primary-header{background:#264899;padding:0 8.3333vw}
-.page-wrap .primary-header .section-link a{font-size:14px;text-align:left;color:#ffffff;text-transform:uppercase;padding:10px;float:left;font-weight:600}
-.page-wrap .primary-header .section-link a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
-.page-wrap .header{background:url("../img/pattern.svg") no-repeat;margin:0;background-position:100% 0;box-shadow:-7px 4px 18px -2px rgba(0,0,0,0.1);background-size:290px !important;padding:0 8.3333vw}
-.page-wrap .header #menu{line-height:110px}
-.page-wrap .header #menu ul{padding:0;text-align:center}
-.page-wrap .header #menu ul li{display:inline-block}
-.page-wrap .header #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:16px;text-align:left;font-weight:500;color:#555;text-transform:uppercase;margin-right:10px}
-.page-wrap .header #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
-.page-wrap .header{background-color:#FFFFFF}
-.page-wrap .footer{background-color:#2C2C2C;margin:0;padding:0px;bottom:0px;position:fixed;width:100%;left:0;height:200px}
-.page-wrap .footer .logo p{color:#fff;font-size:12px;font-weight:400}
-.page-wrap .footer #menu{line-height:110px}
-.page-wrap .footer #menu ul{padding:0;text-align:right}
-.page-wrap .footer #menu ul li{display:inline-block}
-.page-wrap .footer #menu ul li a{font-family:'Ubuntu', sans-serif;font-size:12px;text-align:left;font-weight:400;color:#fff;margin-right:10px}
-.page-wrap .footer #menu ul li a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
-.page-wrap .secondary-footer{background-color:#2C2C2C}
-.page-wrap .secondary-footer p{text-align:right;color:#fff;font-size:12px;font-weight:400;padding:0px 0px 20px 0px;margin-bottom:0px}
-a{-webkit-transition:ease-out 0.4s;-moz-transition:ease-out 0.4s;-o-transition:ease-out 0.4s;transition:ease-out 0.4s}
-a:hover{color:#f45d00;cursor:pointer;text-decoration:none}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif
+}
+
+.page-wrap .primary-header {
+    background: #264899;
+    padding: 0 8.3333vw
+}
+
+.page-wrap .primary-header .section-link a {
+    font-size: 14px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px;
+    float: left;
+    font-weight: 600
+}
+
+.page-wrap .primary-header .section-link a:hover {
+    color: #f45d00;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.page-wrap .header {
+    background: url("../img/pattern.svg") no-repeat;
+    margin: 0;
+    background-position: 100% 0;
+    box-shadow: -7px 4px 18px -2px rgba(0, 0, 0, 0.1);
+    background-size: 290px !important;
+    padding: 0 8.3333vw
+}
+
+.page-wrap .header #menu {
+    line-height: 110px
+}
+
+.page-wrap .header #menu ul {
+    padding: 0;
+    text-align: center
+}
+
+.page-wrap .header #menu ul li {
+    display: inline-block
+}
+
+.page-wrap .header #menu ul li a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+    margin-right: 10px
+}
+
+.page-wrap .header #menu ul li a:hover {
+    color: #f45d00;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.page-wrap .header {
+    background-color: #FFFFFF
+}
+
+.page-wrap .footer {
+    background-color: #2C2C2C;
+    margin: 0;
+    padding: 0px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 200px
+}
+
+.page-wrap .footer .logo p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.page-wrap .footer #menu {
+    line-height: 110px
+}
+
+.page-wrap .footer #menu ul {
+    padding: 0;
+    text-align: right
+}
+
+.page-wrap .footer #menu ul li {
+    display: inline-block
+}
+
+.page-wrap .footer #menu ul li a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 10px
+}
+
+.page-wrap .footer #menu ul li a:hover {
+    color: #f45d00;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.page-wrap .secondary-footer {
+    background-color: #2C2C2C
+}
+
+.page-wrap .secondary-footer p {
+    text-align: right;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 0px 20px 0px;
+    margin-bottom: 0px
+}
+
+a {
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    -o-transition: ease-out 0.4s;
+    transition: ease-out 0.4s
+}
+
+a:hover {
+    color: #f45d00;
+    cursor: pointer;
+    text-decoration: none
+}
 
 
 /***BODY***/
 
 #body-login {
-    background: #FFFFFF !important; /* Old browsers */
+    background: #FFFFFF !important;
+    /* Old browsers */
     text-align: left;
     display: contents;
 }
 
-html, body {
-    color: #333;
+html,
+body {
+    /*color: #333; Don't do this, this breaks dark theme*/
     font-family: Arial, Verdana, sans-serif;
     margin: 0;
 }
 
-body > #page {
+body>#page {
     min-height: max(calc(100% - 200px), 400px);
     padding-bottom: 200px;
     background: url("../img/bg_page.png") left center;
@@ -74,20 +195,20 @@ body > #page {
     margin-top: 30px;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: #222222 !important;
     font-weight: 500;
     font-size: 16px;
 }
-:3
-2
-.navbar-default .navbar-nav > li > a:hover {
+
+.navbar-default .navbar-nav>li>a:hover {
     color: #E5601E !important;
     font-weight: 500;
     font-size: 16px;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
     border: 0;
 }
 
@@ -118,11 +239,13 @@ body > #page {
 }
 
 #body-login .navbar-default {
-  margin-left: 20px;
+    margin-left: 20px;
 }
 
 /**** FAQ and data privacy ***/
-#faq-container, #dps-container{
+#faq-container,
+#dps-container,
+body container {
     min-height: 100%;
     padding-bottom: 200px;
 }
