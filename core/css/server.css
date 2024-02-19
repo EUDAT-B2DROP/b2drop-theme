@@ -245,7 +245,7 @@ body>#page {
 /**** FAQ and data privacy ***/
 #faq-container,
 #dps-container,
-body container {
+body>.container {
     min-height: 100%;
     padding-bottom: 200px;
 }
