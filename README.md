@@ -28,7 +28,7 @@ git clone https://github.com/EUDAT-B2DROP/b2drop-theme.git b2drop
 Color: #264899
 Logo: logo.png
 Header logo: logo_w_border.png
-Favicon: favicon.svg
+Favicon: favicon.ico
 ```
 4. enable the theme via creating <Nextcloud>/config/b2drop.config.php and adding
 ```
@@ -39,6 +39,10 @@ $CONFIG = array (
 ```
 or only the the theme line directly to <Nextcloud>/config/config.php
 ```
+./occ theming:config color  "#264899"
+./occ theming:config logo "... /core/img/logo.png"
+./occ theming:config logoheader "... /core/img/logo_w_border.png"
+./occ theming:config favicon "... /core/img/favicon.ico"
 ./occ config:system:set theme --value b2drop
 ```
 
