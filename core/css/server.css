@@ -389,8 +389,16 @@ table {
     text-decoration-color: #E5601E !important;
 }
 
-#page .failserver a:visited,
-#page .failserver a:link {
+#page .visit-helpdesk a:visited,
+#page .visit-helpdesk a:link {
     text-decoration-color: white;
     color: white;
+}
+
+#page .failserver .text-align-left {
+    text-align: left;
+}
+
+#page .failserver .extra-space-top {
+    margin-top: 20px;
 }
