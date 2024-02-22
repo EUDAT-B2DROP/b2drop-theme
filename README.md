@@ -37,7 +37,7 @@ $CONFIG = array (
   'theme' => 'b2drop',
 );
 ```
-or only the the theme line directly to <Nextcloud>/config/config.php
+**or** only the the theme line directly to <Nextcloud>/config/config.php
 ```
 ./occ theming:config color  "#264899"
 ./occ theming:config logo "... /core/img/logo.png"

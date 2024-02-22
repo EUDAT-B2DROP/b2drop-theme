@@ -8,9 +8,61 @@
     text-align: center;
 }
 
-/***HEADER AND FOOTER***/
-.Row {
-    display table;
+.align-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-wrap .headertable {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.page-wrap .headertable .logo:hover::after {
+    opacity: 1;
+}
+
+.page-wrap .headertable #menu {
+    flex: 1;
+}
+
+.page-wrap .footer .logo-container,
+.page-wrap .footer #menu {
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-wrap .footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 100%;
+}
+
+/* Hover logo animation, puts on sunglasses */
+.page-wrap .headertable .logo {
+    margin-right: -200px; /*width of logo*/
+    z-index: 1; /*Otherwise the button is not pressable*/
+}
+
+.page-wrap .headertable .logo:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+    transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.page-wrap .headertable .logo::after {
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+    transition: opacity 0.3s; /* Smooth transition */
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
@@ -48,7 +100,10 @@ body {
     background-position: 100% 0;
     box-shadow: -7px 4px 18px -2px rgba(0, 0, 0, 0.1);
     background-size: 290px !important;
-    padding: 0 8.3333vw
+    padding: 0 8.3333vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .page-wrap .header #menu {
@@ -87,31 +142,38 @@ body {
 .page-wrap .footer {
     background-color: #2C2C2C;
     margin: 0;
-    padding: 0px;
-    bottom: 0px;
+    bottom: 70px;
+    /*same as secondary footer height*/
     position: fixed;
     width: 100%;
     left: 0;
-    height: 200px
+    height: 130px;
+}
+
+.page-wrap .footer,
+.page-wrap .secondary-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
 }
 
 .page-wrap .footer .logo p {
     color: #fff;
     font-size: 12px;
-    font-weight: 400
+    font-weight: 400;
 }
 
 .page-wrap .footer #menu {
-    line-height: 110px
+    line-height: 110px;
 }
 
 .page-wrap .footer #menu ul {
     padding: 0;
-    text-align: right
+    text-align: right;
 }
 
 .page-wrap .footer #menu ul li {
-    display: inline-block
+    display: inline-block;
 }
 
 .page-wrap .footer #menu ul li a {
@@ -120,17 +182,30 @@ body {
     text-align: left;
     font-weight: 400;
     color: #fff;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .page-wrap .footer #menu ul li a:hover {
     color: #f45d00;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .page-wrap .secondary-footer {
-    background-color: #2C2C2C
+    background-color: #2C2C2C;
+    bottom: 0px;
+    min-width: 100%;
+    position: fixed;
+    max-height: 70px;
+    height: 70px;
+}
+
+.page-wrap .secondary-footer .funding {
+    display: flex;
+}
+
+.page-wrap .secondary-footer .funding:last-child {
+    margin-left: auto;
 }
 
 .page-wrap .secondary-footer p {
@@ -142,11 +217,37 @@ body {
     margin-bottom: 0px
 }
 
+.page-wrap .secondary-footer .line {
+    margin-bottom: 15px;
+    width: 100%;
+    border-bottom: 1px solid #888;
+}
+
+#euflag {
+    display: table-cell;
+    width: 60px;
+}
+
+#eosc {
+    display: table-cell;
+    padding-left: 15px;
+    width: 135px;
+}
+
+#cofunded {
+    display: table-cell;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
 a {
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     -o-transition: ease-out 0.4s;
-    transition: ease-out 0.4s
+    transition: ease-out 0.4s;
 }
 
 a:hover {
@@ -157,9 +258,12 @@ a:hover {
 
 
 /***BODY***/
+.ng-csp,
+#body-login {
+    background-color: #FAFAFA !important;
+}
 
 #body-login {
-    background: #FFFFFF !important;
     /* Old browsers */
     text-align: left;
     display: contents;
@@ -172,15 +276,17 @@ body {
     margin: 0;
 }
 
-body>#page {
-    min-height: max(calc(100% - 200px), 400px);
-    padding-bottom: 200px;
-    background: url("../img/bg_page.png") left center;
+#page {
+    /*min-height: max(calc(100% - 200px), 400px);*/
+    padding-bottom: 200px; /*same as combined footer height*/
+    /*background: url("../img/bg_page.png") left center;*/
+    background-image: url("../img/bg_page.png");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-origin: border-box;
+    background-size: 30% auto;
+    background-position: 0% 30%;
     background-color: #FAFAFA;
-    position: relative;
+    min-height: 500px;
 }
 
 #b2access-login {
@@ -242,12 +348,13 @@ body>#page {
     margin-left: 20px;
 }
 
-/**** FAQ and data privacy ***/
-#faq-container,
-#dps-container,
-body>.container {
+#page>.container {
     min-height: 100%;
-    padding-bottom: 200px;
+    /*padding-bottom: 200px; Handled by #page*/
+    box-sizing: border-box;
+    padding: 0 10% 0 10%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #body-dps {
