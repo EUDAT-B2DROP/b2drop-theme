@@ -6,7 +6,7 @@
 .login-option {
     background-color: #264899;
     text-align: center;
-    border-radius: var(--border-radius-rounded);
+    border-radius: var(--border-radius-rounded, 4px);
     border: 0;
 }
 
@@ -367,6 +367,30 @@ table {
     white-space: inherit;
 }
 
-#page .description-home {
+#page .description-home,
+#page .visit-helpdesk {
     width: min(400px, 90%);
+}
+
+#page .failserver a {
+    line-height: 40px;
+    text-decoration: none;
+}
+
+#page .visit-helpdesk a {
+    display: block;
+    border-radius: var(--border-radius-rounded, 4px);
+}
+
+#page .failserver a:hover {
+    line-height: 40px;
+    text-decoration: underline;
+    color: #E5601E !important;
+    text-decoration-color: #E5601E !important;
+}
+
+#page .failserver a:visited,
+#page .failserver a:link {
+    text-decoration-color: white;
+    color: white;
 }
