@@ -6,6 +6,8 @@
 .login-option {
     background-color: #264899;
     text-align: center;
+    border-radius: var(--border-radius-rounded);
+    border: 0;
 }
 
 .align-vertical {
@@ -70,12 +72,12 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .page-wrap .primary-header {
     background: #264899;
-    padding: 0 8.3333vw
+    padding: 0 8.3333vw;
 }
 
 .page-wrap .primary-header .section-link a {
@@ -85,13 +87,13 @@ body {
     text-transform: uppercase;
     padding: 10px;
     float: left;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .page-wrap .primary-header .section-link a:hover {
     color: #f45d00;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .page-wrap .header {
@@ -107,16 +109,16 @@ body {
 }
 
 .page-wrap .header #menu {
-    line-height: 110px
+    line-height: 110px;
 }
 
 .page-wrap .header #menu ul {
     padding: 0;
-    text-align: center
+    text-align: center;
 }
 
 .page-wrap .header #menu ul li {
-    display: inline-block
+    display: inline-block;
 }
 
 .page-wrap .header #menu ul li a {
@@ -126,17 +128,17 @@ body {
     font-weight: 500;
     color: #555;
     text-transform: uppercase;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .page-wrap .header #menu ul li a:hover {
     color: #f45d00;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .page-wrap .header {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
 }
 
 .page-wrap .footer {
@@ -214,7 +216,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     padding: 0px 0px 20px 0px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
 }
 
 .page-wrap .secondary-footer .line {
@@ -253,7 +255,7 @@ a {
 a:hover {
     color: #f45d00;
     cursor: pointer;
-    text-decoration: none
+    text-decoration: none;
 }
 
 
@@ -363,4 +365,8 @@ body {
 
 table {
     white-space: inherit;
+}
+
+#page .description-home {
+    width: min(400px, 90%);
 }
