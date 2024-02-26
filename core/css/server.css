@@ -411,20 +411,36 @@ table {
     .page-wrap .headertable .logo {
         align-self: flex-start;
     }
+
+    .page-wrap .header #menu ul {
+        padding-top: 60px;   
+        padding-bottom: 10px;
+    }
+
+    .page-wrap .header #menu {
+        line-height: 30px;
+    }
 }
 
 @media only screen and (max-width: 850px) {
     .page-wrap .footer {
-        height: 200px;
+        height: 160px;
         overflow-y: auto;
+        bottom: 120px;  /* secondary footer height*/
+    }
+
+    .page-wrap .secondary-footer {
+        height: 120px;
+        max-height: 120px;
     }
 
     .page-wrap .footer .footer-container {
         flex-direction: column;
+        justify-content: flex-start;
     }
 
     #page {
-        padding-bottom: 240px;
+        padding-bottom: 280px; /*Footer + secondary footer height*/
     }
 
     .page-wrap .footer #menu ul{
