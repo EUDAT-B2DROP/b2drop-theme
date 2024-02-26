@@ -36,8 +36,6 @@
 
 .page-wrap .footer .logo-container,
 .page-wrap .footer #menu {
-    max-width: 50%;
-    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -228,12 +226,14 @@ body {
 #euflag {
     display: table-cell;
     width: 60px;
+    overflow-x: hidden;
 }
 
 #eosc {
     display: table-cell;
     padding-left: 15px;
     width: 135px;
+    overflow-x: hidden;
 }
 
 #cofunded {
@@ -401,4 +401,43 @@ table {
 
 #page .failserver .extra-space-top {
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+    .page-wrap .headertable {
+        flex-direction: column;
+    }
+
+    .page-wrap .headertable .logo {
+        align-self: flex-start;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .page-wrap .footer {
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    .page-wrap .footer .footer-container {
+        flex-direction: column;
+    }
+
+    #page {
+        padding-bottom: 240px;
+    }
+
+    .page-wrap .footer #menu ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .page-wrap .footer #menu li{
+        line-height: 20px;
+    }
+
+    #page .login-box,
+    #page .login-option {
+        max-width: 95%;
+    }
 }
