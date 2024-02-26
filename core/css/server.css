@@ -422,7 +422,7 @@ table {
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
     .page-wrap .footer {
         height: 160px;
         overflow-y: auto;
