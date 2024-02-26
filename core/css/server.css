@@ -41,7 +41,7 @@
     flex-direction: column;
 }
 
-.page-wrap .footer .footer-container{
+.page-wrap .footer .footer-container {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -50,19 +50,26 @@
 
 /* Hover logo animation, puts on sunglasses */
 .page-wrap .headertable .logo {
-    margin-right: -200px; /*width of logo*/
-    z-index: 1; /*Otherwise the button is not pressable*/
+    margin-right: -200px;
+    /*width of logo*/
+    z-index: 1;
+    /*Otherwise the button is not pressable*/
 }
 
 .page-wrap .headertable .logo:hover {
-    opacity: 0.8; /* Reduce opacity on hover */
-    transform: scale(1.05); /* Scale up slightly on hover */
-    transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
+    opacity: 0.8;
+    /* Reduce opacity on hover */
+    transform: scale(1.05);
+    /* Scale up slightly on hover */
+    transition: opacity 0.3s, transform 0.3s;
+    /* Smooth transition */
 }
 
 .page-wrap .headertable .logo::after {
-    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
-    transition: opacity 0.3s; /* Smooth transition */
+    background: rgba(0, 0, 0, 0.2);
+    /* Semi-transparent black */
+    transition: opacity 0.3s;
+    /* Smooth transition */
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap");
@@ -76,6 +83,7 @@ body {
 .page-wrap .primary-header {
     background: #264899;
     padding: 0 8.3333vw;
+    height: 45px;
 }
 
 .page-wrap .primary-header .section-link a {
@@ -96,14 +104,17 @@ body {
 
 .page-wrap .header {
     background: url("../img/pattern.svg") no-repeat;
-    margin: 0;
+    margin: 0 0 10px 0;
     background-position: 100% 0;
     box-shadow: -7px 4px 18px -2px rgba(0, 0, 0, 0.1);
     background-size: 290px !important;
     padding: 0 8.3333vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    height: 110px;
 }
 
 .page-wrap .header #menu {
@@ -279,16 +290,17 @@ body {
 }
 
 #page {
-    /*min-height: max(calc(100% - 200px), 400px);*/
-    padding-bottom: 200px; /*same as combined footer height*/
+    min-height: calc(100% - 200px - 45px - 140px);
+    /* page size - footer - primary-header - header*/
+    padding-bottom: 200px;
+    /*same as combined footer height*/
     /*background: url("../img/bg_page.png") left center;*/
     background-image: url("../img/bg_page.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 30% auto;
-    background-position: 0% 30%;
+    background-size: 50% auto;
+    background-position: 50% 50%;
     background-color: #FAFAFA;
-    min-height: 500px;
 }
 
 #b2access-login {
@@ -413,12 +425,21 @@ table {
     }
 
     .page-wrap .header #menu ul {
-        padding-top: 60px;   
+        padding-top: 60px;
         padding-bottom: 10px;
     }
 
     .page-wrap .header #menu {
         line-height: 30px;
+    }
+
+    .page-wrap .header {
+        height: 210px;
+    }
+
+    #page {
+        /* page size - footer - primary-header - header*/
+        min-height: calc(100% - 200px - 45px - 240px);
     }
 }
 
@@ -426,7 +447,8 @@ table {
     .page-wrap .footer {
         height: 160px;
         overflow-y: auto;
-        bottom: 120px;  /* secondary footer height*/
+        bottom: 120px;
+        /* secondary footer height*/
     }
 
     .page-wrap .secondary-footer {
@@ -440,15 +462,18 @@ table {
     }
 
     #page {
-        padding-bottom: 280px; /*Footer + secondary footer height*/
+        padding-bottom: 280px;
+        /*Footer + secondary footer height*/
+        /* page size - footer - primary-header - header*/
+        min-height: calc(100% - 280px - 45px - 240px);
     }
 
-    .page-wrap .footer #menu ul{
+    .page-wrap .footer #menu ul {
         display: flex;
         align-items: center;
     }
 
-    .page-wrap .footer #menu li{
+    .page-wrap .footer #menu li {
         line-height: 20px;
     }
 
