@@ -380,21 +380,25 @@ table {
 }
 
 #page .description-home,
-#page .visit-helpdesk {
+#page .visit-helpdesk,
+#page .contact-us {
     width: min(400px, 90%);
 }
 
+#page .requests a,
 #page .failserver a {
     line-height: 40px;
     text-decoration: none;
 }
 
-#page .visit-helpdesk a {
+#page .visit-helpdesk a,
+#page .contact-us a {
     display: block;
     border-radius: var(--border-radius-rounded, 4px);
 }
 
-#page .failserver a:hover {
+#page .failserver a:hover,
+#page .requests a:hover {
     line-height: 40px;
     text-decoration: underline;
     color: #E5601E !important;
@@ -402,16 +406,20 @@ table {
 }
 
 #page .visit-helpdesk a:visited,
-#page .visit-helpdesk a:link {
+#page .visit-helpdesk a:link,
+#page .contact-us a:visited,
+#page .contact-us a:link {
     text-decoration-color: white;
     color: white;
 }
 
-#page .failserver .text-align-left {
+#page .failserver .text-align-left,
+#page .requests .text-align-left {
     text-align: left;
 }
 
-#page .failserver .extra-space-top {
+#page .failserver .extra-space-top, 
+#page .requests .extra-space-top {
     margin-top: 20px;
 }
 
