@@ -10,6 +10,11 @@
     border: 0;
 }
 
+/* hide direct login */
+.login-option:first-of-type {
+    display: none;
+}
+
 .align-vertical {
     display: flex;
     flex-direction: column;
