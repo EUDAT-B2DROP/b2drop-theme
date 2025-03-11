@@ -2,12 +2,12 @@
 /**
  * OwnCloud - B2DROP Theme File
  *
- * PHP Version 5-7
+ * PHP Version 5-7, 8
  *
  * @category  Owncloud
  * @package   Theme
- * @author    EUDAT <b2drop-devel@postit.csc.fi>
- * @copyright 2016 EUDAT
+ * @author    EUDAT <b2drop-devel@postit.csc.fi>, Marvin Winkens <m.winkens@fz-juelich.de>
+ * @copyright 2025 EUDAT
  * @license   AGPL3 https://github.com/EUDAT-B2DROP/b2drop-theme/blob/master/LICENSE
  * @link      https://github.com/EUDAT-B2DROP/b2drop-theme.git
  */
@@ -29,13 +29,19 @@ class OC_Theme
     /**
      * Create theme object
      */
-    function __construct() 
+    public function __construct() 
     {
         $this->themeName = "b2drop";
         $this->slogan = "Sync and Exchange Research Data";
-        $this->themeFooter = '';
         $this->baseUrl = "https://b2drop.eudat.eu";
         $this->iTunesAppId = "543672169";
+
+        $footer_links = [
+            "<a href=\"{$this->baseUrl}/themes/b2drop/core/templates/impressum.html\">Impressum</a>",
+            "<a href=\"{$this->baseUrl}/themes/b2drop/core/templates/data-privacy-statement.html\">Data Privacy Statement</a>",
+        ];
+
+        $this->themeFooter = implode("<br>", $footer_links);
     }
 
     /**
@@ -79,6 +85,15 @@ class OC_Theme
     }
 
     /**
+	 * Returns the short name of the software containing HTML strings
+	 * @return string title
+	 */
+	public function getHTMLName(): string {
+		return $this->themeName;
+	}
+
+
+    /**
      * Get slogan
      *
      * @return string slogan
@@ -97,4 +112,12 @@ class OC_Theme
     {
         return $this->baseUrl;
     }
+
+    /**
+	 * Returns the documentation URL
+	 * @return string URL
+	 */
+	public function getDocBaseUrl(): string {
+		return 'https://docs.eudat.eu/b2drop/';
+	}
 }
