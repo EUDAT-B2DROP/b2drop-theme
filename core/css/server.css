@@ -390,9 +390,12 @@ table {
     width: min(400px, 90%);
 }
 
-#page .requests a,
 #page .failserver a {
     line-height: 40px;
+    text-decoration: none;
+}
+
+#page .requests a {
     text-decoration: none;
 }
 
@@ -402,8 +405,12 @@ table {
     border-radius: var(--border-radius-rounded, 4px);
 }
 
-#page .failserver a:hover,
 #page .requests a:hover {
+    color: #E5601E !important;
+    text-decoration-color: #E5601E !important;
+}
+
+#page .failserver a:hover {
     line-height: 40px;
     text-decoration: underline;
     color: #E5601E !important;
