@@ -18,7 +18,7 @@
 	<link rel="manifest" href="<?php print_unescaped(image_path('', 'manifest.json')); ?>">
 	<?php emit_css_loading_tags($_); ?>
 	<?php emit_script_loading_tags($_); ?>
-	<link rel="stylesheet" href="/themes/b2drop/core/css/server.css" type="text/css" />
+	<link rel="stylesheet" href="/themes/b2drop/apps/core/css/server.css" type="text/css" />
 	<?php foreach ($_['printcssfiles'] as $cssfile): ?>
 		<link rel="stylesheet" href="<?php print_unescaped($cssfile); ?>" media="print">
 	<?php endforeach; ?>
