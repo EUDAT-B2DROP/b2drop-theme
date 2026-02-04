@@ -37,8 +37,8 @@ class OC_Theme
         $this->iTunesAppId = "543672169";
 
         $footer_links = [
-            "<a href=\"{$this->baseUrl}/themes/b2drop/core/templates/impressum.html\">Impressum</a>",
-            "<a href=\"{$this->baseUrl}/themes/b2drop/core/templates/data-privacy-statement.html\">Data Privacy Statement</a>",
+            "<a href=\"{$this->baseUrl}/themes/b2drop/apps/core/templates/impressum.html\">Impressum</a>",
+            "<a href=\"{$this->baseUrl}/themes/b2drop/apps/core/templates/data-privacy-statement.html\">Data Privacy Statement</a>",
         ];
 
         $this->themeFooter = implode("<br>", $footer_links);
