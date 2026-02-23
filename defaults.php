@@ -29,7 +29,14 @@ class OC_Theme
     /**
      * Create theme object
      */
-    public function __construct() 
+
+    private string $baseUrl;
+    private string $iTunesAppId;
+    private string $themeName;
+    private string $themeFooter;
+    private string $slogan;
+
+    public function __construct()
     {
         $this->themeName = "b2drop";
         $this->slogan = "Sync and Exchange Research Data";
@@ -49,7 +56,7 @@ class OC_Theme
      *
      * @return string iTunesAppId
      */
-    public function getiTunesAppId() 
+    public function getiTunesAppId(): string
     {
         return $this->iTunesAppId;
     }
@@ -59,7 +66,7 @@ class OC_Theme
      *
      * @return string themeName
      */
-    public function getTitle() 
+    public function getTitle(): string
     {
         return $this->themeName;
     }
@@ -69,7 +76,7 @@ class OC_Theme
      *
      * @return string themeFooter
      */
-    public function getLongFooter() 
+    public function getLongFooter(): string
     {
         return $this->themeFooter;
     }
@@ -79,18 +86,19 @@ class OC_Theme
      *
      * @return string themeName
      */
-    public function getName() 
+    public function getName(): string
     {
         return $this->themeName;
     }
 
     /**
-	 * Returns the short name of the software containing HTML strings
-	 * @return string title
-	 */
-	public function getHTMLName(): string {
-		return $this->themeName;
-	}
+     * Returns the short name of the software containing HTML strings
+     * @return string title
+     */
+    public function getHTMLName(): string
+    {
+        return $this->themeName;
+    }
 
 
     /**
@@ -98,7 +106,7 @@ class OC_Theme
      *
      * @return string slogan
      */
-    public function getSlogan() 
+    public function getSlogan(): string
     {
         return $this->slogan;
     }
@@ -108,16 +116,17 @@ class OC_Theme
      *
      * @return string baseurl
      */
-    public function getBaseUrl() 
+    public function getBaseUrl(): string
     {
         return $this->baseUrl;
     }
 
     /**
-	 * Returns the documentation URL
-	 * @return string URL
-	 */
-	public function getDocBaseUrl(): string {
-		return 'https://docs.eudat.eu/b2drop/';
-	}
+     * Returns the documentation URL
+     * @return string URL
+     */
+    public function getDocBaseUrl(): string
+    {
+        return 'https://docs.eudat.eu/b2drop/';
+    }
 }
