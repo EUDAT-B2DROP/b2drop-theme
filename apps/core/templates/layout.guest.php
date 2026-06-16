@@ -10,7 +10,12 @@
 		<div id="page">
 			<div class="container" id="b2access-login">
 				<div class="description-home">
-					<?php print_unescaped($_['content']); ?>
+					<div id="oidc-select-user-back-end">
+						<h1>Anmeldeoptionen:</h1>
+						<div class="login-option">
+							<a href="https://b2drop-devel.fz-juelich.de/apps/user_oidc/login/1?redirectUrl=">B2ACCESS</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

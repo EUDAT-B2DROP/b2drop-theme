@@ -1,18 +1,38 @@
+:root, [data-theme-default], [data-theme-light], [data-theme-dark], [data-theme-light-highcontrast], [data-theme-dark-highcontrast] { /* Body container settings, mostly for removing the side margins, and for applying the styles to guest pages */
+    --background-invert-if-dark: 0;
+}
+
 /*user_saml*/
-#saml-select-user-back-end {
+#saml-select-user-back-end,
+#oidc-select-user-back-end {
     color: #000000;
+}
+
+#oidc-select-user-back-end h1 {
+	font-size: 16px;
+	padding: 20px 0;
 }
 
 .login-option {
     background-color: #264899;
     text-align: center;
     border-radius: var(--border-radius-rounded, 4px);
-    border: 0;
+	border: 0px; /*1px solid var(--color-primary-text);*/
+	font-weight: 600;
+	height: 40px;
+
+	margin: 15px 0;
+	min-width: 269px;
+	font-size: 20px;
+	line-height: 40px;
 }
 
-/* hide direct login */
-.login-option:first-of-type {
-    display: none;
+.login-option a {
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+    color: var(--color-primary-text);
+    cursor: pointer;
 }
 
 .align-vertical {
