@@ -13,7 +13,7 @@
 					<div id="oidc-select-user-back-end">
 						<h1>Anmeldeoptionen:</h1>
 						<div class="login-option">
-							<a href="https://b2drop.eudat.eu/apps/user_oidc/login/1?redirectUrl=">B2ACCESS</a>
+							<a href="/apps/user_oidc/login/1?redirectUrl=">B2ACCESS</a>
 						</div>
 					</div>
 				</div>
