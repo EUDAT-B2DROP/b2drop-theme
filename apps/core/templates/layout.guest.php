@@ -5,6 +5,8 @@
 <?php include 'components/head.php'; ?>
 
 <body id="<?php p($_['bodyid']); ?>">
+	<?php include \OC::$SERVERROOT . '/core/templates/layout.noscript.warning.php'; ?>
+	<?php include \OC::$SERVERROOT . '/core/templates/layout.initial-state.php'; ?>
 	<?php if ($_['bodyid'] === 'body-login'): ?>
 		<?php include 'components/header.html'; ?>
 		<div id="page">
